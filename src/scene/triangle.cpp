@@ -27,9 +27,35 @@ bool Triangle::has_intersection(const Ray &r) const {
   // The difference between this function and the next function is that the next
   // function records the "intersection" while this function only tests whether
   // there is a intersection.
-
-
-  return true;
+    
+    //compute t, b1, b2
+    Vector3D o = r.o;
+    Vector3D p0 = this->p1;
+    Vector3D p1 = this->p2;
+    Vector3D p2 = this->p3;
+    Vector3D d = r.d;
+    Vector3D e1 = p1 - p0;
+    Vector3D e2 = p2 - p0;
+    Vector3D s = o - p0;
+    Vector3D s1 = cross(d, e2);
+    Vector3D s2 = cross(s, e1);
+    
+    
+    Vector3D intersecion =  Vector3D(dot(s2, e2), dot(s1, s), dot(s2, d)) / dot(s1, e1);
+    
+    
+    double t = intersecion[0];
+    double b1 = intersecion[1];
+    double b2 = intersecion[2];
+    
+    
+    bool valid_intersection = r.min_t <= t && t <= r.max_t && 0 <= b1 && b1 <= 1 && 0 <= b2 && b2 <= 1 && 1 - b1 - b2 <= 1 && 1 - b1 - b2 >= 0;
+    
+    if(valid_intersection){
+        r.max_t = t;
+    }
+    
+  return valid_intersection;
 
 }
 
@@ -37,10 +63,37 @@ bool Triangle::intersect(const Ray &r, Intersection *isect) const {
   // Part 1, Task 3:
   // implement ray-triangle intersection. When an intersection takes
   // place, the Intersection data should be updated accordingly
+    
+    if(has_intersection(r)){
+        
+        Vector3D o = r.o;
+        Vector3D p0 = this->p1;
+        Vector3D p1 = this->p2;
+        Vector3D p2 = this->p3;
+        Vector3D d = r.d;
+        Vector3D e1 = p1 - p0;
+        Vector3D e2 = p2 - p0;
+        Vector3D s = o - p0;
+        Vector3D s1 = cross(d, e2);
+        Vector3D s2 = cross(s, e1);
+        
+        
+        Vector3D intersecion = Vector3D(dot(s2, e2), dot(s1, s), dot(s2, d)) / dot(s1, e1);
+        
+        
+        double t = intersecion[0];
+        double b1 = intersecion[1];
+        double b2 = intersecion[2];
+        
+        isect->t = t;
+        isect->n = n1 * b1 + n2 * b2 + (1-b1-b2) * n3;
+        isect->primitive = this;
+        isect->bsdf = get_bsdf();
+        
+        return true;
+    }
 
-
-  return true;
-
+  return false;
 
 }
 
