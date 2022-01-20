@@ -1,0 +1,2406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24B7A29B7262428BA7EC1062 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 52273E6B8C1D47329F717470 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				3F82F227423B4BF0BCAF7954 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				0D1EBE4E5B824427AE49DDB2 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		79DDC98D80A745709ECBA975 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8FA4F4DDCCA04F4A89DA6827 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				89A0F835E2B14680AF69F3CD /* CMake Rules */,
+			);
+			dependencies = (
+				B92F191283F34F84B9EFC5C9 /* PBXTargetDependency */,
+				F3F032E6470F4808AD66C96C /* PBXTargetDependency */,
+				557C89F683FC4A019B1524AF /* PBXTargetDependency */,
+				905DC89CDE4140F2A12725A8 /* PBXTargetDependency */,
+				A44197A4F62E46DFBFD1A309 /* PBXTargetDependency */,
+				66C1FC7BB9E441B5A91B1A4F /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		96D541C9488948619344F9BC /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 93482EC2C27741488A0DED27 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				414F983A273E4FA4A6DBAF4C /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		C9002FAC4990474E8A5013D1 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 61103EF8881F42B1B243AC59 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				409845E5D33F4E9A96636A4D /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01597573B9424FCCAD5D3B8C /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/init.c */ = {isa = PBXBuildFile; fileRef = 7B5E3CE641FA4F6CB505B27B /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/init.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		05AD4C2196EC44B5B27EC354 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.h */ = {isa = PBXBuildFile; fileRef = 5284316E48294F92B9D04415 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.h */; };
+		08CFD277B7D14D6EBDFC5724 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.h */ = {isa = PBXBuildFile; fileRef = 9519B22469DC4895B12F1FB5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.h */; };
+		0D5E7E0DBFBF4EB2B4F910BB /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/internal.h */ = {isa = PBXBuildFile; fileRef = 73565D544D9F4C0A82DB81C3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/internal.h */; };
+		0DA02C8247224B079341EC1A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.cpp */ = {isa = PBXBuildFile; fileRef = 2F1FFDF860594A1284C9C9BC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.cpp */; };
+		0DC1770022414F839CE910C0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.cpp */ = {isa = PBXBuildFile; fileRef = 8CBD8F9816434052BDE54BF6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.cpp */; };
+		0ED3E3351E9A4A0299119A64 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXBuildFile; fileRef = 87EAE96B6DAA4342BC479748 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/visualinfo.c */; };
+		0EF338F0842644A8B40F2779 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = CE08543D80C943B6AF9BA4A5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include/GLFW/glfw3native.h */; };
+		0F749BF5CAD041349EDEA396 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.cpp */ = {isa = PBXBuildFile; fileRef = 4D155CD645C64F0FA3DF3606 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.cpp */; };
+		0F815E03B8EA4798B4461BD5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/directional_light.h */ = {isa = PBXBuildFile; fileRef = 74D02BFDAE414A3E877C2636 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/directional_light.h */; };
+		11681201AA404CA68725F3B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_widgets.cpp */ = {isa = PBXBuildFile; fileRef = B3B609D69C324996AA67E2DF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_widgets.cpp */; };
+		11D3C6A7784647E0876A8888 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/point_light.h */ = {isa = PBXBuildFile; fileRef = 48E8F43CB6FD410784507758 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/point_light.h */; };
+		1288169DC8AE4699AC168F0A /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/osmesa_context.h */ = {isa = PBXBuildFile; fileRef = BC8C1578058B4275BAF4CE09 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/osmesa_context.h */; };
+		13A4D0E31CA2447F93C39BC2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada_info.h */ = {isa = PBXBuildFile; fileRef = B9BEA0592A71480AAC2026D9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada_info.h */; };
+		1477C62209F449B38394B07C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/area_light.h */ = {isa = PBXBuildFile; fileRef = 63D6B4B5A2194CE0AD1D0CC8 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/area_light.h */; };
+		1523FB64748349CE9F165604 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/path.cpp */ = {isa = PBXBuildFile; fileRef = 042DC418278D46B1BD4CECA4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/path.cpp */; };
+		1568ECD67A8E4B8CBF03BF19 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/ray.h */ = {isa = PBXBuildFile; fileRef = 02C12F4D217346DABCBD2D86 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/ray.h */; };
+		18440E6D30DB40F48A70AD50 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/osdtext.cpp */ = {isa = PBXBuildFile; fileRef = 36686CBB022B413A8426EB80 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/osdtext.cpp */; };
+		186CBE0E04244DA49A899EFA /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.h */ = {isa = PBXBuildFile; fileRef = E085211A7765411884D5F451 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.h */; };
+		188167866572405292EA5086 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/draw_style.h */ = {isa = PBXBuildFile; fileRef = 026D91024E64465AAC468C54 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/draw_style.h */; };
+		19B6912754A840C5986FFE08 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/matrix4x4.cpp */ = {isa = PBXBuildFile; fileRef = 6C3CD868AAC44381AD232620 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/matrix4x4.cpp */; };
+		1B5CBF8BD173493FBF11A721 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/main.cpp */ = {isa = PBXBuildFile; fileRef = 823CC4A9428143E49881E3C6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/main.cpp */; };
+		1BC3EBC509F7456D87033887 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.cpp */ = {isa = PBXBuildFile; fileRef = B97DB838BA004168BDA74F50 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.cpp */; };
+		1BF2A1349F6846F985DB4925 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.cpp */ = {isa = PBXBuildFile; fileRef = 303EBA4B73964C2DBBD2B194 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.cpp */; };
+		1D2C05440330419D831F1FD7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.h */ = {isa = PBXBuildFile; fileRef = CE89A6FE0E10441E8B08D22D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.h */; };
+		1EDAA1186BC5442AA8D3CDDE /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/primitive.h */ = {isa = PBXBuildFile; fileRef = C694C9B5CC294BFAA7E4AFEC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/primitive.h */; };
+		1F984271C341441E967783AA /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.h */ = {isa = PBXBuildFile; fileRef = B09AB1C48A804742BE967D8B /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.h */; };
+		21C25BD14A5E497A89950890 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.h */ = {isa = PBXBuildFile; fileRef = DC7B53659C6B4667B9E6B47F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.h */; };
+		21E7C4C58A7947EAA0D40A0F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.h */ = {isa = PBXBuildFile; fileRef = 951B05DE65C44B64B0AB7888 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.h */; };
+		21E7FAE290D9441CA7C44FCF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.h */ = {isa = PBXBuildFile; fileRef = EE4B6E240ED14BE6A7F48AF0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.h */; };
+		22FE6EF835B341F0B77DF1F9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 99564C6797F84CF8B73242B1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/CMakeLists.txt */; };
+		2354A21241A545F896D77628 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.h */ = {isa = PBXBuildFile; fileRef = E8CF7565F3A3446F93AADBE7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.h */; };
+		245FC45B89EB4FB58595D74F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = B0C22A35D79744D28064A9C0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/nsgl_context.m */; };
+		26640613971D4B9C8F1A792E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.h */ = {isa = PBXBuildFile; fileRef = FA34BEDB654B493EAE8270D4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.h */; };
+		269D5878A23243CEA0A13E26 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/area_light.h */ = {isa = PBXBuildFile; fileRef = E1F49D1752B24DD6946957A3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/area_light.h */; };
+		2AC922DE811D4B9EB6C99395 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.h */ = {isa = PBXBuildFile; fileRef = C7B443330AE741E9BB9291F3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.h */; };
+		2B24322C15404BEFB052424D /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/osdfont.cpp */ = {isa = PBXBuildFile; fileRef = 6C0DD2262812490B85A4A8CE /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/osdfont.cpp */; };
+		2E3128CC74964EDBBD6B07FC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.cpp */ = {isa = PBXBuildFile; fileRef = 6A155EFE269B47DEAC8DE28C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.cpp */; };
+		2EBCC15C6CFC4286B3332251 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = B37CD24FC62F4E9E83775C61 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_platform.h */; };
+		305B220FC6744FBFB6F936AB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/backends/imgui_impl_opengl2.cpp */ = {isa = PBXBuildFile; fileRef = B4FD7AC1D71744E48E58E2EF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/backends/imgui_impl_opengl2.cpp */; };
+		311B6E24B1084415A7AB4F90 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/osmesa_context.c */ = {isa = PBXBuildFile; fileRef = 2CE1774BAB644F4590579391 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/osmesa_context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		32EA186CC279453BB4BB657D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/point_light.h */ = {isa = PBXBuildFile; fileRef = 534E7F3C52574977BA7E4C60 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/point_light.h */; };
+		333CF587A6D3406BB0591E9D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.cpp */ = {isa = PBXBuildFile; fileRef = 65428D1E6868491FBC3FA610 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.cpp */; };
+		346270E550704A68AAF944C1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/image.h */ = {isa = PBXBuildFile; fileRef = 887F2015AC2344BB8A4F2653 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/image.h */; };
+		35EFAFDAAEB64BA8AF704720 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.h */ = {isa = PBXBuildFile; fileRef = 629A87E90DBA40E9BD63FD2D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.h */; };
+		36C85B5194F74F83BB47F884 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.h */ = {isa = PBXBuildFile; fileRef = 4A62E0277B0E468784B22ADC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.h */; };
+		373C6E8D4280439FBC99EF19 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.h */ = {isa = PBXBuildFile; fileRef = 6CE60F188A9A4453B27355B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.h */; };
+		3770374167474763B9562305 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = 911E287E31AF44B1BD792ADD /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_joystick.h */; };
+		37E2FD7C1B234123852C7F7A /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector3D.cpp */ = {isa = PBXBuildFile; fileRef = 8A3378ED60304D2FB8178F18 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector3D.cpp */; };
+		39E2E667A98E49A29A2F794A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.cpp */ = {isa = PBXBuildFile; fileRef = 578BBE9F338449C2A02BECB2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.cpp */; };
+		3BEAE8C10DB441BA9B3AF61D /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/input.c */ = {isa = PBXBuildFile; fileRef = 3B1705B6C6A449D5BE7316B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/input.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		3C933988631D44869E897A5A /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/mappings.h */ = {isa = PBXBuildFile; fileRef = 0B42ED904A0745A6B698CC34 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/mappings.h */; };
+		3EB98A87420B4C8497D4B9F6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/quaternion.cpp */ = {isa = PBXBuildFile; fileRef = 7E7E3808BAF642A083DEE295 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/quaternion.cpp */; };
+		3F57F2C7310F4D3587406A12 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/environment_light.h */ = {isa = PBXBuildFile; fileRef = 274A0ABE87854DAA8E959EC2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/environment_light.h */; };
+		45EC079A5FB34F3EBF086760 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.cpp */ = {isa = PBXBuildFile; fileRef = EE35A4B92CFF422F889EA38A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.cpp */; };
+		46258158C0E7456BBE1AC61E /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/viewer.cpp */ = {isa = PBXBuildFile; fileRef = B7B19C6897D74A8987B3A2E5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/viewer.cpp */; };
+		48794AAAC20543A88FA78B43 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector4D.cpp */ = {isa = PBXBuildFile; fileRef = FAD14C1CB79D4B139AF9CC78 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector4D.cpp */; };
+		49887102D379429FB62F6FC9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.h */ = {isa = PBXBuildFile; fileRef = D4448795C39040DE94FBA474 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.h */; };
+		4BAA2871E27843118EDA00DC /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = B39D4D8CA72D487D8D087A08 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_monitor.m */; };
+		4BE1B003F27449E2BE90EDFB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/material.h */ = {isa = PBXBuildFile; fileRef = 87A46F66C87C4CA1B21648B6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/material.h */; };
+		4D05E2451DD04D92B4F06283 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.h */ = {isa = PBXBuildFile; fileRef = 587015B6ABBB4C618F649AF5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.h */; };
+		4D60B14EC40E49C3AF4D77DB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.cpp */ = {isa = PBXBuildFile; fileRef = 95DA41BB8259464D94AE1F27 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.cpp */; };
+		50BAE5B2CE7F4957840EC590 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.h */ = {isa = PBXBuildFile; fileRef = 9E4F06D456234184947FB1D7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.h */; };
+		51485852715F439F8F21C8B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.h */ = {isa = PBXBuildFile; fileRef = 2A9CAF9AEB1748D2A5F0738C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.h */; };
+		5247AEA84A784D6BBC4ECE51 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/work_queue.h */ = {isa = PBXBuildFile; fileRef = 41E06DD59BBA44D5876307C9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/work_queue.h */; };
+		52876CCAD19B4A2F84B34B40 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.h */ = {isa = PBXBuildFile; fileRef = 8BB77FCB4E4C4DFBB4C2016C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.h */; };
+		5457FC7E807B4552A66EE794 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/material.h */ = {isa = PBXBuildFile; fileRef = BB6583609C394145B432D27C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/material.h */; };
+		5494FAAD193E4A5AA29FAA77 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/mutablePriorityQueue.h */ = {isa = PBXBuildFile; fileRef = BE8C33A78D454F2BA5012089 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/mutablePriorityQueue.h */; };
+		580B90622D244894BCC3F5B6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/mutablePriorityQueue.h */ = {isa = PBXBuildFile; fileRef = 80C7CA03481844BF9EEA2B32 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/mutablePriorityQueue.h */; };
+		596D6B049B144415A16A538A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.h */ = {isa = PBXBuildFile; fileRef = 42F7D562B56749AEA6BAF649 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.h */; };
+		59E2155C8F0B451B9BD34B46 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.h */ = {isa = PBXBuildFile; fileRef = 51982B4285EE49B49F7A2D97 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.h */; };
+		5A1606526C1B4C74AA33D371 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.h */ = {isa = PBXBuildFile; fileRef = E94989CFD07C4BF79ED53D6E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.h */; };
+		5B31D774458C4A4A8B5C7E3C /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/complex.cpp */ = {isa = PBXBuildFile; fileRef = 0F23BBFE0D88407582B5399F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/complex.cpp */; };
+		5CD24E74514241E4B9C2575E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.cpp */ = {isa = PBXBuildFile; fileRef = F8019EE2D3864FD99EED4DE4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.cpp */; };
+		5DB2D80E5CD14FFCABB6B140 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = B348A1E895764E4194A2C5ED /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_joystick.m */; };
+		6232A3D1E90A4D7781B30854 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.h */ = {isa = PBXBuildFile; fileRef = 72FBD5CAD3154F609059266C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.h */; };
+		62D7CCD59A714E56A2C976DC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.h */ = {isa = PBXBuildFile; fileRef = A83D8073EFC44C81AADA3826 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.h */; };
+		66045C739C1E4A8FA2C1A516 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.h */ = {isa = PBXBuildFile; fileRef = 22CAFAD21D2E45B383D37C61 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.h */; };
+		6D27C6C50CD7492292675F9E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.h */ = {isa = PBXBuildFile; fileRef = D02E8536866E4E9DA647EAB1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.h */; };
+		6D7CCD89AA754B22AACC4C8D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/environment_light.h */ = {isa = PBXBuildFile; fileRef = 2765C9E593B041438838AB70 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/environment_light.h */; };
+		710FC1A6D7DB446BB0C47AA3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.h */ = {isa = PBXBuildFile; fileRef = A7FE64037E3546AE8300CB6D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.h */; };
+		72692EC2258A40489135C0C7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/spot_light.h */ = {isa = PBXBuildFile; fileRef = 7A5A02136B7642D3B801C439 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/spot_light.h */; };
+		73AE4FE2AD9B42A3BBD6ADFA /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 5D30CBDFBFCF49E7839D0479 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include/GLFW/glfw3.h */; };
+		770B6EF7BD764264A7CB8F02 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 4EEA916926D749408C38FE2F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/nsgl_context.h */; };
+		77861C84E9D6497CB2CB2BF0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.h */ = {isa = PBXBuildFile; fileRef = E15FEB58D98D46CFAF08AE3C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.h */; };
+		7AB1D7CCC0564EB88907CDD2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/lodepng.cpp */ = {isa = PBXBuildFile; fileRef = 974044327F084462B38B875E /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/lodepng.cpp */; };
+		7B08BDF325F14C868DF40C61 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.cpp */ = {isa = PBXBuildFile; fileRef = D6FAE63FEF74492CB74AAE9E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.cpp */; };
+		7DAECAAEF79F46D0A5869C2E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.h */ = {isa = PBXBuildFile; fileRef = A1CBCB2F3B9D4D0185ADACAC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.h */; };
+		7DFE840FE8DD43C18FB13649 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/directional_light.h */ = {isa = PBXBuildFile; fileRef = 23DB52CE24734885923D98BE /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/directional_light.h */; };
+		7E64E095BF5244D18236EAFB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.cpp */ = {isa = PBXBuildFile; fileRef = F22AF93182DD4B1499BDC711 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.cpp */; };
+		806F2980CC604ADCAD44AFB2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.h */ = {isa = PBXBuildFile; fileRef = D26F4B32F3DF4B5585BE09AD /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.h */; };
+		81B21A3CAF0543C59B4AF080 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.cpp */ = {isa = PBXBuildFile; fileRef = 2137087DD1BA4887BD9EC6DF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.cpp */; };
+		84505BBB244F4E1EBEF8BC52 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/aggregate.h */ = {isa = PBXBuildFile; fileRef = 7B570AE42039479CA5501F80 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/aggregate.h */; };
+		85214FA024DE4CFEA34B75DC /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/egl_context.h */ = {isa = PBXBuildFile; fileRef = D92CA434FACC4E138670AC37 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/egl_context.h */; };
+		86AD41ED781845988F546558 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.h */ = {isa = PBXBuildFile; fileRef = D6D9223AA6D44E61ADDDB477 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.h */; };
+		8947A6F8AB3F43B7930B6BCD /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/random_util.h */ = {isa = PBXBuildFile; fileRef = 8C26955A05384C248DF80B58 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/random_util.h */; };
+		898E8204362C45C2A79CAF02 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_tables.cpp */ = {isa = PBXBuildFile; fileRef = 704E19094F61401EA9CE02BF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_tables.cpp */; };
+		8B3D91156831460D9AE3D263 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.cpp */ = {isa = PBXBuildFile; fileRef = 35F39A9342DE40A5BC3470C5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.cpp */; };
+		8EC40CC74E7D46C0B507262A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/backends/imgui_impl_glfw.cpp */ = {isa = PBXBuildFile; fileRef = 0E5B7DDFB2AB4A588145925A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/backends/imgui_impl_glfw.cpp */; };
+		90E5BB5873BC4CC8AD4252F5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/posix_thread.h */ = {isa = PBXBuildFile; fileRef = B94ABED6A16E422B88142E3C /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/posix_thread.h */; };
+		93558208AA1E45F0AF7967BC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.cpp */ = {isa = PBXBuildFile; fileRef = E4F1A2C69E33451D9E370011 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.cpp */; };
+		948C3EC470AE4F918A5E2A41 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/egl_context.c */ = {isa = PBXBuildFile; fileRef = 8412706BDC2C430BA4BE7626 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/egl_context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		94BF6DFB014B4EB181984B8D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui.cpp */ = {isa = PBXBuildFile; fileRef = A4FFB048390E47E8B46F29D0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui.cpp */; };
+		9565110EE23344B7B395DD74 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/image.h */ = {isa = PBXBuildFile; fileRef = 432C62C87E8F431C86728D42 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/image.h */; };
+		99C693152DCB466E99128ED2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = C9787C0835924B828D9B44F1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_time.c */; };
+		9A18A745A31E4332982530A0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/ambient_light.h */ = {isa = PBXBuildFile; fileRef = 626C08A9C92E48FEBC99E30F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/ambient_light.h */; };
+		9A312E6D9FE545F1951D2F5D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.h */ = {isa = PBXBuildFile; fileRef = BCE493F9BBE446698220CFCA /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.h */; };
+		A01A20AD67994A91A280C3F7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.h */ = {isa = PBXBuildFile; fileRef = E1048A03D12B4FCD9DFA15BB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.h */; };
+		A1BAAA0092B34D2BAE3CAB7F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.h */ = {isa = PBXBuildFile; fileRef = 607037C5A1C74B62BE90D158 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.h */; };
+		A344F398AF6B458BA74C294B /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/matrix3x3.cpp */ = {isa = PBXBuildFile; fileRef = B785AA3873A344ABB8408D97 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/matrix3x3.cpp */; };
+		A39B2D2FED784FBBB9B57D0E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.h */ = {isa = PBXBuildFile; fileRef = 1E9A6D83A7DC449CAD8B9133 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.h */; };
+		A6A854B296664A93BB8FEDD9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.cpp */ = {isa = PBXBuildFile; fileRef = 093AC3BA44AE478F8F368080 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.cpp */; };
+		A80EF6D261A54DD9BE39473B /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.cpp */ = {isa = PBXBuildFile; fileRef = 4CD10473E109486B8F12278E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.cpp */; };
+		A8414084C0AA4436A16839C6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7627EA70A3C3439EB56E8129 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/CMakeLists.txt */; };
+		AA4ABFF6F99E49C2958BD051 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/color.cpp */ = {isa = PBXBuildFile; fileRef = 61F7914F5D3E4B7F9930C520 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/color.cpp */; };
+		AC89952F18B24DC8844ED98F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/base64.cpp */ = {isa = PBXBuildFile; fileRef = B4F8DA852BF7479DB3B13F93 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/base64.cpp */; };
+		ADFFD14B73034A7D83B26C44 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.h */ = {isa = PBXBuildFile; fileRef = 747471175FA64AF1AF504B1D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.h */; };
+		AEB4CA88CF2B4182ACBD945C /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = A4CA3B407B9E46A79B330894 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/vulkan.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		AEB673B089734AE0BB05732D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.cpp */ = {isa = PBXBuildFile; fileRef = E2BA4E7311F94FDC90690840 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.cpp */; };
+		B06E1682E90248C7B687E524 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXBuildFile; fileRef = 1713DB5C1D12405AA261BAE2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/glewinfo.c */; };
+		B101CFA8FB7A474B8B9723FA /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/window.c */ = {isa = PBXBuildFile; fileRef = 2F6DEB3C1936459FAC29216F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/window.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		B15C8D7F404C4A02955C9349 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/context.c */ = {isa = PBXBuildFile; fileRef = ED5820226D14402486601B30 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		B162AD43BF654D0DB0D83278 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/scene.h */ = {isa = PBXBuildFile; fileRef = 3A6235C99DC942ACBEEA417F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/scene.h */; };
+		B30A7B9A6AEC4E39818C5231 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.h */ = {isa = PBXBuildFile; fileRef = 80C7A5E1D9D541419EDDA2A4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.h */; };
+		B4587247FB664E2693D51B62 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/aggregate.h */ = {isa = PBXBuildFile; fileRef = 7DC08920ADCC4549A4ED1CD7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/aggregate.h */; };
+		B46EE63A6B284467B55DCF54 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh_view.h */ = {isa = PBXBuildFile; fileRef = FA39AB5AB6B6408E9576B626 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh_view.h */; };
+		B4FE7A65178D49EEBBBD86C2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/advanced_bsdf.cpp */ = {isa = PBXBuildFile; fileRef = E06CAA6B251F4C0BA0A56EEB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/advanced_bsdf.cpp */; };
+		B688A4EB914843009941BF62 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/draw_style.h */ = {isa = PBXBuildFile; fileRef = 3B5468CF5702466DB91047AB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/draw_style.h */; };
+		B8D8B53972CA47138413E939 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/ambient_light.h */ = {isa = PBXBuildFile; fileRef = B54BA69E71B6436B984B8453 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/ambient_light.h */; };
+		B9CD91A60D834E86B1A8F712 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.h */ = {isa = PBXBuildFile; fileRef = 261E08D00B314269B08A5889 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.h */; };
+		BA6B775BA7554B6C9CA0B7DC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh_view.h */ = {isa = PBXBuildFile; fileRef = 907543C26D794F30A5AF64CB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh_view.h */; };
+		BA6BF8298B33463D81D340E1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.h */ = {isa = PBXBuildFile; fileRef = B873AF452176479AABAC03CD /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.h */; };
+		BAA4433A87E74C9E976B99D0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.h */ = {isa = PBXBuildFile; fileRef = B5AF2F8C7AFE4F2F89813431 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.h */; };
+		BBA6ECA0E8EC4FF3AC0FCDB7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/work_queue.h */ = {isa = PBXBuildFile; fileRef = 3A77FE8B64DF4498A1FADDB1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/work_queue.h */; };
+		BCDBFCCE8B414364B4F64872 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/random_util.h */ = {isa = PBXBuildFile; fileRef = C738D6D0593248F789A36434 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/random_util.h */; };
+		BE66367721334B0DBA52E7A9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/intersection.h */ = {isa = PBXBuildFile; fileRef = 7192CA67075943E1953B9CF2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/intersection.h */; };
+		BEEC894218CD4760913D7B1E /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/glew.c */ = {isa = PBXBuildFile; fileRef = 72A15D84D8534548BEBDEF64 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/glew.c */; };
+		BF4A5A24879B47B59685C5B8 /* /Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 1501D0A95DC543A3B430244E /* /Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src/glfw_config.h */; };
+		C01F584A83254EE99EDA668C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.h */ = {isa = PBXBuildFile; fileRef = C309607087DC4F269862FBEA /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.h */; };
+		C0550A9809C04174B8C719DE /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.cpp */ = {isa = PBXBuildFile; fileRef = DD41E745959E40D1942D3687 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.cpp */; };
+		C08C0C146CF2432C99F0FBC2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.h */ = {isa = PBXBuildFile; fileRef = 97AFBC31029D46AD8F7C3A29 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.h */; };
+		C1A757B767C5468EBE872439 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 63C7B54AB4874AD2BB368366 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/monitor.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		C203BBF853AD468CB7A36884 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.h */ = {isa = PBXBuildFile; fileRef = FBBD6C6DAE0C43288FCAF9C8 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.h */; };
+		C4D8A47BD58E46E8B8BF4974 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 66FBCCDBBC7E44FA9A6833E4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CMakeLists.txt */; };
+		C6EC37F8D7664DDF94128DE7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.h */ = {isa = PBXBuildFile; fileRef = 60201FBB447E40A2B009B2A8 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.h */; };
+		C918417A71B042838F6BE2DC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.h */ = {isa = PBXBuildFile; fileRef = B760254CD110471DBFCB5300 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.h */; };
+		C93D57E394EC4F969CA5E682 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 98202771485B4D3A9D4142FB /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_window.m */; };
+		CA88739CE3BF44F5B777C3C7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.h */ = {isa = PBXBuildFile; fileRef = BD07BD9E14644B3AB5D5C035 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.h */; };
+		D0967BCE1A2E42A4B09AB88B /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/spot_light.h */ = {isa = PBXBuildFile; fileRef = 721531FB813E4F1BA7988287 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/spot_light.h */; };
+		D2864C6A0A1E4FCAAE662FC1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/renderer.h */ = {isa = PBXBuildFile; fileRef = 234D5035953E47E48DDD39CF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/renderer.h */; };
+		D34E8CCE87B84A018213FF82 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.h */ = {isa = PBXBuildFile; fileRef = D418D99D130C438C869177ED /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.h */; };
+		D42BE490EA184B18920B1CD1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada_info.h */ = {isa = PBXBuildFile; fileRef = 66A623C97D2548668DA940E0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada_info.h */; };
+		D4A60FB0B9344358A8510ABF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.cpp */ = {isa = PBXBuildFile; fileRef = 9EC79FE661C0454A9F7816A7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.cpp */; };
+		D53C536631524D54843DFABD /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera_lens.cpp */ = {isa = PBXBuildFile; fileRef = A9CC8D7489F04301A9666E7E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera_lens.cpp */; };
+		D5CFD9BE6C8D44B1AA932036 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.cpp */ = {isa = PBXBuildFile; fileRef = 6CEF036A40DE41668981F42F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.cpp */; };
+		D73C57B2DEDE42B48A2B8298 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.cpp */ = {isa = PBXBuildFile; fileRef = 16B08225139B4356AB305590 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.cpp */; };
+		D99D365C3DFD4A0EA9B3F3E7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4623452FD6C447B69AD39076 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/CMakeLists.txt */; };
+		DAE3D104404D48758415A3C4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.cpp */ = {isa = PBXBuildFile; fileRef = 85B90A3286044B14B6A81858 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.cpp */; };
+		DB96C2012E0B420C8741FC38 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector2D.cpp */ = {isa = PBXBuildFile; fileRef = 330543D9B4864582A6C41C68 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector2D.cpp */; };
+		DD06BE57CE694069B334A31A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/intersection.h */ = {isa = PBXBuildFile; fileRef = 22A8BB9A3B4C4439A0813DF0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/intersection.h */; };
+		DD9E1912425148ED8F9C8931 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.h */ = {isa = PBXBuildFile; fileRef = 30D3C58B52604F498B822540 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.h */; };
+		E34C145D60864DFCB0887649 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.h */ = {isa = PBXBuildFile; fileRef = 5DA42B7C31074C94A9A98902 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.h */; };
+		E3BFB0A0ED0E48699B4A215B /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/ray.h */ = {isa = PBXBuildFile; fileRef = CAB4F2A5C35446C7AAF72ADC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/ray.h */; };
+		EBF99E6B293442F7A80DA150 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.h */ = {isa = PBXBuildFile; fileRef = E0D85B190E674CC9AF010A0E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.h */; };
+		EFA8AA3E790C459FBD4EDD4C /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/tinyxml2.cpp */ = {isa = PBXBuildFile; fileRef = 21E40A1C905A48648AA9B897 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/tinyxml2.cpp */; };
+		F15F3D6563AD4BD2ACEDDE4C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/scene.h */ = {isa = PBXBuildFile; fileRef = 6FADAD3F7EF14BB8958401C3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/scene.h */; };
+		F1921EE6CCCF485BB2F6EB1A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.cpp */ = {isa = PBXBuildFile; fileRef = 24862876F30947A8BCDA73E2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.cpp */; };
+		F372A944DE7A424B968DAF4F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/primitive.h */ = {isa = PBXBuildFile; fileRef = 0F0ED166CFEE4AB99BC1F2D9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/primitive.h */; };
+		F38F8EAB019F41CC8CA20BCD /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.h */ = {isa = PBXBuildFile; fileRef = 14555B2E2FA942809E93BC89 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.h */; };
+		F3D024DEE30E4307928C9F99 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_draw.cpp */ = {isa = PBXBuildFile; fileRef = DB0F34C9B86C44E4B06175A1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_draw.cpp */; };
+		F5E7A6CC7CF344B08329D69D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.cpp */ = {isa = PBXBuildFile; fileRef = DF65949C2C6D446E8C5412B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.cpp */; };
+		F74B7FDA8C8F419AA423E78E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/visual_debugger.cpp */ = {isa = PBXBuildFile; fileRef = CD19DE517A7C45FDA98CCD8E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/visual_debugger.cpp */; };
+		F802C501BDEA43F5BDAEB31B /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/posix_thread.c */ = {isa = PBXBuildFile; fileRef = 76A556A1C818444B831A2FB3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/posix_thread.c */; };
+		F83E59E541C641E19F4474AC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.h */ = {isa = PBXBuildFile; fileRef = 23342F36464E4B53B499E4C3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.h */; };
+		FC040E1609E94AFDAE038CC5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 720F0E98136B41A2B9B71A65 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_init.m */; };
+		FC30DD57EED5461DB523D5FB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/renderer.h */ = {isa = PBXBuildFile; fileRef = 27792FB2C295407BA023D59B /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/renderer.h */; };
+		FD1477BD478F47D7814B0949 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B99FB2E550C744EBB73F9648 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		483322CE8BBD4EFFA019A0AB /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		A7AD2BFEB5F64F35985ABEDA /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		D62470D4AFF24A16954BB4CB /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		EC001BC4EB59488C8C5CD97E /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		02B2224976D240D29209E6C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96D541C9488948619344F9BC;
+			remoteInfo = ZERO_CHECK;
+		};
+		0CB6A7DD52244BB79997C548 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0C07AD39C1416BB09B88AA;
+			remoteInfo = glew;
+		};
+		10483FFD8ACA40D3BE9D76D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BFC05FD1B014893ADEE18B3;
+			remoteInfo = CGL;
+		};
+		1C60CDE945004866AD6A070E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0C07AD39C1416BB09B88AA;
+			remoteInfo = glew;
+		};
+		30E5BF05A0974A39A548846F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EC824DA12064D9EAD53CDDA;
+			remoteInfo = pathtracer;
+		};
+		3643A55771534E10A8C140DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96D541C9488948619344F9BC;
+			remoteInfo = ZERO_CHECK;
+		};
+		374D4A3AB96C4CCE88A358FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2F3CF09693842A581CE6EC7;
+			remoteInfo = glfw;
+		};
+		3B361CA75492425780432A73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79DDC98D80A745709ECBA975;
+			remoteInfo = ALL_BUILD;
+		};
+		3EDDE92245764129AA90D7E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02AB29D4940345D288C884E1;
+			remoteInfo = pt31;
+		};
+		560CAE5110764059B0E50DD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0C07AD39C1416BB09B88AA;
+			remoteInfo = glew;
+		};
+		6333BECA03464CEFB572C15E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2F3CF09693842A581CE6EC7;
+			remoteInfo = glfw;
+		};
+		7C13D99035354982996D7FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BFC05FD1B014893ADEE18B3;
+			remoteInfo = CGL;
+		};
+		7FF946B9BEC84EE1AE7357B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0C07AD39C1416BB09B88AA;
+			remoteInfo = glew;
+		};
+		CCC12FB698124AF7AFDF1A4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02AB29D4940345D288C884E1;
+			remoteInfo = pt31;
+		};
+		EC0B9CB773714B8BAEBECE06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BFC05FD1B014893ADEE18B3;
+			remoteInfo = CGL;
+		};
+		EE7674A71B8B401986EA27F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2F3CF09693842A581CE6EC7;
+			remoteInfo = glfw;
+		};
+		F7617F735FAE4FADB954940C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2F3CF09693842A581CE6EC7;
+			remoteInfo = glfw;
+		};
+		FE5946E7373D4CE7BC094866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58166E1EFF66474DB0CB3D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96D541C9488948619344F9BC;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		026D91024E64465AAC468C54 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/draw_style.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = draw_style.h; path = src/scene/gl_scene/draw_style.h; sourceTree = SOURCE_ROOT; };
+		02C12F4D217346DABCBD2D86 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/ray.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ray.h; path = src/pathtracer/ray.h; sourceTree = SOURCE_ROOT; };
+		042DC418278D46B1BD4CECA4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/path.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = path.cpp; path = CGL/src/path.cpp; sourceTree = SOURCE_ROOT; };
+		093AC3BA44AE478F8F368080 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = raytraced_renderer.cpp; path = src/pathtracer/raytraced_renderer.cpp; sourceTree = SOURCE_ROOT; };
+		0B42ED904A0745A6B698CC34 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = CGL/deps/glfw/src/mappings.h; sourceTree = SOURCE_ROOT; };
+		0E5B7DDFB2AB4A588145925A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/backends/imgui_impl_glfw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_glfw.cpp; path = src/imgui/backends/imgui_impl_glfw.cpp; sourceTree = SOURCE_ROOT; };
+		0F0ED166CFEE4AB99BC1F2D9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/primitive.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = primitive.h; path = src/scene/primitive.h; sourceTree = SOURCE_ROOT; };
+		0F23BBFE0D88407582B5399F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/complex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = complex.cpp; path = CGL/src/complex.cpp; sourceTree = SOURCE_ROOT; };
+		14555B2E2FA942809E93BC89 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = meshEdit.h; path = src/application/meshEdit.h; sourceTree = SOURCE_ROOT; };
+		1501D0A95DC543A3B430244E /* /Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = xcode/CGL/deps/glfw/src/glfw_config.h; sourceTree = SOURCE_ROOT; };
+		16B08225139B4356AB305590 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = material_info.cpp; path = src/scene/collada/material_info.cpp; sourceTree = SOURCE_ROOT; };
+		1713DB5C1D12405AA261BAE2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glewinfo.c; path = CGL/deps/glew/src/glewinfo.c; sourceTree = SOURCE_ROOT; };
+		1E9A6D83A7DC449CAD8B9133 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = material_info.h; path = src/scene/collada/material_info.h; sourceTree = SOURCE_ROOT; };
+		2137087DD1BA4887BD9EC6DF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = polymesh_info.cpp; path = src/scene/collada/polymesh_info.cpp; sourceTree = SOURCE_ROOT; };
+		21E40A1C905A48648AA9B897 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/tinyxml2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyxml2.cpp; path = CGL/src/tinyxml2.cpp; sourceTree = SOURCE_ROOT; };
+		22A8BB9A3B4C4439A0813DF0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/intersection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = intersection.h; path = src/pathtracer/intersection.h; sourceTree = SOURCE_ROOT; };
+		22CAFAD21D2E45B383D37C61 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = environment_light.h; path = src/scene/environment_light.h; sourceTree = SOURCE_ROOT; };
+		23342F36464E4B53B499E4C3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = triangle.h; path = src/scene/triangle.h; sourceTree = SOURCE_ROOT; };
+		234D5035953E47E48DDD39CF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = renderer.h; path = src/application/renderer.h; sourceTree = SOURCE_ROOT; };
+		23DB52CE24734885923D98BE /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/directional_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = directional_light.h; path = src/scene/gl_scene/directional_light.h; sourceTree = SOURCE_ROOT; };
+		24862876F30947A8BCDA73E2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scene.cpp; path = src/scene/gl_scene/scene.cpp; sourceTree = SOURCE_ROOT; };
+		261E08D00B314269B08A5889 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bvh.h; path = src/scene/bvh.h; sourceTree = SOURCE_ROOT; };
+		274A0ABE87854DAA8E959EC2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/environment_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = environment_light.h; path = src/scene/gl_scene/environment_light.h; sourceTree = SOURCE_ROOT; };
+		2765C9E593B041438838AB70 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/environment_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = environment_light.h; path = src/scene/gl_scene/environment_light.h; sourceTree = SOURCE_ROOT; };
+		27792FB2C295407BA023D59B /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = renderer.h; path = src/application/renderer.h; sourceTree = SOURCE_ROOT; };
+		2A847C40CC32472CAFE556FF /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glfw/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2A9CAF9AEB1748D2A5F0738C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = light_info.h; path = src/scene/collada/light_info.h; sourceTree = SOURCE_ROOT; };
+		2AA8D8E6C7C949E797A7AB26 /* CGL */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCGL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE1774BAB644F4590579391 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = CGL/deps/glfw/src/osmesa_context.c; sourceTree = SOURCE_ROOT; };
+		2F1FFDF860594A1284C9C9BC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = object.cpp; path = src/scene/object.cpp; sourceTree = SOURCE_ROOT; };
+		2F6DEB3C1936459FAC29216F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = CGL/deps/glfw/src/window.c; sourceTree = SOURCE_ROOT; };
+		303EBA4B73964C2DBBD2B194 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere_drawing.cpp; path = src/util/sphere_drawing.cpp; sourceTree = SOURCE_ROOT; };
+		30D3C58B52604F498B822540 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = application.h; path = src/application/application.h; sourceTree = SOURCE_ROOT; };
+		330543D9B4864582A6C41C68 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector2D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector2D.cpp; path = CGL/src/vector2D.cpp; sourceTree = SOURCE_ROOT; };
+		35F39A9342DE40A5BC3470C5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bvh.cpp; path = src/scene/bvh.cpp; sourceTree = SOURCE_ROOT; };
+		36686CBB022B413A8426EB80 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/osdtext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdtext.cpp; path = CGL/src/osdtext.cpp; sourceTree = SOURCE_ROOT; };
+		3A6235C99DC942ACBEEA417F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/scene/scene.h; sourceTree = SOURCE_ROOT; };
+		3A77FE8B64DF4498A1FADDB1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/work_queue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = work_queue.h; path = src/util/work_queue.h; sourceTree = SOURCE_ROOT; };
+		3B1705B6C6A449D5BE7316B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = CGL/deps/glfw/src/input.c; sourceTree = SOURCE_ROOT; };
+		3B5468CF5702466DB91047AB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/draw_style.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = draw_style.h; path = src/scene/gl_scene/draw_style.h; sourceTree = SOURCE_ROOT; };
+		41E06DD59BBA44D5876307C9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/work_queue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = work_queue.h; path = src/util/work_queue.h; sourceTree = SOURCE_ROOT; };
+		4277ED09D0D44EB885B02D14 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F7D562B56749AEA6BAF649 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = raytraced_renderer.h; path = src/pathtracer/raytraced_renderer.h; sourceTree = SOURCE_ROOT; };
+		432C62C87E8F431C86728D42 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = image.h; path = src/util/image.h; sourceTree = SOURCE_ROOT; };
+		4623452FD6C447B69AD39076 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glew/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		48E8F43CB6FD410784507758 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/point_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = point_light.h; path = src/scene/gl_scene/point_light.h; sourceTree = SOURCE_ROOT; };
+		497C8B9846BD44C1B0BC96D3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4A62E0277B0E468784B22ADC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = halfEdgeMesh.h; path = src/util/halfEdgeMesh.h; sourceTree = SOURCE_ROOT; };
+		4CD10473E109486B8F12278E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mesh.cpp; path = src/scene/gl_scene/mesh.cpp; sourceTree = SOURCE_ROOT; };
+		4D155CD645C64F0FA3DF3606 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = triangle.cpp; path = src/scene/triangle.cpp; sourceTree = SOURCE_ROOT; };
+		4EEA916926D749408C38FE2F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = CGL/deps/glfw/src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		51982B4285EE49B49F7A2D97 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lodepng.h; path = src/util/lodepng.h; sourceTree = SOURCE_ROOT; };
+		5284316E48294F92B9D04415 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere_info.h; path = src/scene/collada/sphere_info.h; sourceTree = SOURCE_ROOT; };
+		534E7F3C52574977BA7E4C60 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/point_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = point_light.h; path = src/scene/gl_scene/point_light.h; sourceTree = SOURCE_ROOT; };
+		578BBE9F338449C2A02BECB2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere.cpp; path = src/scene/sphere.cpp; sourceTree = SOURCE_ROOT; };
+		587015B6ABBB4C618F649AF5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere_drawing.h; path = src/util/sphere_drawing.h; sourceTree = SOURCE_ROOT; };
+		5D30CBDFBFCF49E7839D0479 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = CGL/deps/glfw/include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		5DA42B7C31074C94A9A98902 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = light.h; path = src/scene/light.h; sourceTree = SOURCE_ROOT; };
+		5F980F556D44426CAC2AE10F /* glew */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		60201FBB447E40A2B009B2A8 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = polymesh_info.h; path = src/scene/collada/polymesh_info.h; sourceTree = SOURCE_ROOT; };
+		607037C5A1C74B62BE90D158 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = light.h; path = src/scene/light.h; sourceTree = SOURCE_ROOT; };
+		61F7914F5D3E4B7F9930C520 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = CGL/src/color.cpp; sourceTree = SOURCE_ROOT; };
+		61F79CEE9E6C462CB3D7F409 /* pt31 */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libpt31.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		626C08A9C92E48FEBC99E30F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/ambient_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ambient_light.h; path = src/scene/gl_scene/ambient_light.h; sourceTree = SOURCE_ROOT; };
+		629A87E90DBA40E9BD63FD2D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = polymesh_info.h; path = src/scene/collada/polymesh_info.h; sourceTree = SOURCE_ROOT; };
+		63C7B54AB4874AD2BB368366 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = CGL/deps/glfw/src/monitor.c; sourceTree = SOURCE_ROOT; };
+		63D6B4B5A2194CE0AD1D0CC8 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/area_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = area_light.h; path = src/scene/gl_scene/area_light.h; sourceTree = SOURCE_ROOT; };
+		65428D1E6868491FBC3FA610 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = src/pathtracer/camera.cpp; sourceTree = SOURCE_ROOT; };
+		66A623C97D2548668DA940E0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collada_info.h; path = src/scene/collada/collada_info.h; sourceTree = SOURCE_ROOT; };
+		66FBCCDBBC7E44FA9A6833E4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6A155EFE269B47DEAC8DE28C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = meshEdit.cpp; path = src/application/meshEdit.cpp; sourceTree = SOURCE_ROOT; };
+		6C0DD2262812490B85A4A8CE /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/osdfont.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdfont.cpp; path = CGL/src/osdfont.cpp; sourceTree = SOURCE_ROOT; };
+		6C3CD868AAC44381AD232620 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/matrix4x4.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix4x4.cpp; path = CGL/src/matrix4x4.cpp; sourceTree = SOURCE_ROOT; };
+		6CE60F188A9A4453B27355B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pathtracer.h; path = src/pathtracer/pathtracer.h; sourceTree = SOURCE_ROOT; };
+		6CEF036A40DE41668981F42F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere_info.cpp; path = src/scene/collada/sphere_info.cpp; sourceTree = SOURCE_ROOT; };
+		6FADAD3F7EF14BB8958401C3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/scene/scene.h; sourceTree = SOURCE_ROOT; };
+		704E19094F61401EA9CE02BF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_tables.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_tables.cpp; path = src/imgui/imgui_tables.cpp; sourceTree = SOURCE_ROOT; };
+		7192CA67075943E1953B9CF2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/intersection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = intersection.h; path = src/pathtracer/intersection.h; sourceTree = SOURCE_ROOT; };
+		720F0E98136B41A2B9B71A65 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = CGL/deps/glfw/src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		721531FB813E4F1BA7988287 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/spot_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = spot_light.h; path = src/scene/gl_scene/spot_light.h; sourceTree = SOURCE_ROOT; };
+		72A15D84D8534548BEBDEF64 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/glew.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glew.c; path = CGL/deps/glew/src/glew.c; sourceTree = SOURCE_ROOT; };
+		72FBD5CAD3154F609059266C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh.h; path = src/scene/gl_scene/mesh.h; sourceTree = SOURCE_ROOT; };
+		73565D544D9F4C0A82DB81C3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = CGL/deps/glfw/src/internal.h; sourceTree = SOURCE_ROOT; };
+		747471175FA64AF1AF504B1D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = halfEdgeMesh.h; path = src/util/halfEdgeMesh.h; sourceTree = SOURCE_ROOT; };
+		74D02BFDAE414A3E877C2636 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/directional_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = directional_light.h; path = src/scene/gl_scene/directional_light.h; sourceTree = SOURCE_ROOT; };
+		7627EA70A3C3439EB56E8129 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		76A556A1C818444B831A2FB3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = CGL/deps/glfw/src/posix_thread.c; sourceTree = SOURCE_ROOT; };
+		7A5A02136B7642D3B801C439 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/spot_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = spot_light.h; path = src/scene/gl_scene/spot_light.h; sourceTree = SOURCE_ROOT; };
+		7B570AE42039479CA5501F80 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/aggregate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = aggregate.h; path = src/scene/aggregate.h; sourceTree = SOURCE_ROOT; };
+		7B5E3CE641FA4F6CB505B27B /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = CGL/deps/glfw/src/init.c; sourceTree = SOURCE_ROOT; };
+		7DC08920ADCC4549A4ED1CD7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/aggregate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = aggregate.h; path = src/scene/aggregate.h; sourceTree = SOURCE_ROOT; };
+		7E7E3808BAF642A083DEE295 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quaternion.cpp; path = CGL/src/quaternion.cpp; sourceTree = SOURCE_ROOT; };
+		80C7A5E1D9D541419EDDA2A4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lodepng.h; path = src/util/lodepng.h; sourceTree = SOURCE_ROOT; };
+		80C7CA03481844BF9EEA2B32 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/mutablePriorityQueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mutablePriorityQueue.h; path = src/util/mutablePriorityQueue.h; sourceTree = SOURCE_ROOT; };
+		823CC4A9428143E49881E3C6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/application/main.cpp; sourceTree = SOURCE_ROOT; };
+		8412706BDC2C430BA4BE7626 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = CGL/deps/glfw/src/egl_context.c; sourceTree = SOURCE_ROOT; };
+		85B90A3286044B14B6A81858 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = light.cpp; path = src/scene/light.cpp; sourceTree = SOURCE_ROOT; };
+		87A46F66C87C4CA1B21648B6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/material.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = material.h; path = src/scene/gl_scene/material.h; sourceTree = SOURCE_ROOT; };
+		87EAE96B6DAA4342BC479748 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = visualinfo.c; path = CGL/deps/glew/src/visualinfo.c; sourceTree = SOURCE_ROOT; };
+		887F2015AC2344BB8A4F2653 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = image.h; path = src/util/image.h; sourceTree = SOURCE_ROOT; };
+		8A3378ED60304D2FB8178F18 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector3D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector3D.cpp; path = CGL/src/vector3D.cpp; sourceTree = SOURCE_ROOT; };
+		8BB77FCB4E4C4DFBB4C2016C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera.h; path = src/pathtracer/camera.h; sourceTree = SOURCE_ROOT; };
+		8C26955A05384C248DF80B58 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/random_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = random_util.h; path = src/util/random_util.h; sourceTree = SOURCE_ROOT; };
+		8CBD8F9816434052BDE54BF6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pathtracer.cpp; path = src/pathtracer/pathtracer.cpp; sourceTree = SOURCE_ROOT; };
+		907543C26D794F30A5AF64CB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh_view.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh_view.h; path = src/scene/gl_scene/mesh_view.h; sourceTree = SOURCE_ROOT; };
+		911E287E31AF44B1BD792ADD /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = CGL/deps/glfw/src/cocoa_joystick.h; sourceTree = SOURCE_ROOT; };
+		9519B22469DC4895B12F1FB5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere.h; path = src/scene/sphere.h; sourceTree = SOURCE_ROOT; };
+		951B05DE65C44B64B0AB7888 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere_info.h; path = src/scene/collada/sphere_info.h; sourceTree = SOURCE_ROOT; };
+		95DA41BB8259464D94AE1F27 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = environment_light.cpp; path = src/scene/environment_light.cpp; sourceTree = SOURCE_ROOT; };
+		974044327F084462B38B875E /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/lodepng.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lodepng.cpp; path = CGL/src/lodepng.cpp; sourceTree = SOURCE_ROOT; };
+		97AFBC31029D46AD8F7C3A29 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = triangle.h; path = src/scene/triangle.h; sourceTree = SOURCE_ROOT; };
+		98202771485B4D3A9D4142FB /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = CGL/deps/glfw/src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		99564C6797F84CF8B73242B1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glfw/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9E4F06D456234184947FB1D7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere.h; path = src/scene/gl_scene/sphere.h; sourceTree = SOURCE_ROOT; };
+		9EC79FE661C0454A9F7816A7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = application.cpp; path = src/application/application.cpp; sourceTree = SOURCE_ROOT; };
+		A1CBCB2F3B9D4D0185ADACAC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sampler.h; path = src/pathtracer/sampler.h; sourceTree = SOURCE_ROOT; };
+		A4CA3B407B9E46A79B330894 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = CGL/deps/glfw/src/vulkan.c; sourceTree = SOURCE_ROOT; };
+		A4FFB048390E47E8B46F29D0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui.cpp; path = src/imgui/imgui.cpp; sourceTree = SOURCE_ROOT; };
+		A7FE64037E3546AE8300CB6D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sampler.h; path = src/pathtracer/sampler.h; sourceTree = SOURCE_ROOT; };
+		A83D8073EFC44C81AADA3826 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = object.h; path = src/scene/object.h; sourceTree = SOURCE_ROOT; };
+		A9CC8D7489F04301A9666E7E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera_lens.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera_lens.cpp; path = src/pathtracer/camera_lens.cpp; sourceTree = SOURCE_ROOT; };
+		B09AB1C48A804742BE967D8B /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bbox.h; path = src/scene/bbox.h; sourceTree = SOURCE_ROOT; };
+		B0C22A35D79744D28064A9C0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = CGL/deps/glfw/src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		B348A1E895764E4194A2C5ED /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = CGL/deps/glfw/src/cocoa_joystick.m; sourceTree = SOURCE_ROOT; };
+		B37CD24FC62F4E9E83775C61 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = CGL/deps/glfw/src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		B39D4D8CA72D487D8D087A08 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = CGL/deps/glfw/src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		B3B609D69C324996AA67E2DF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_widgets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_widgets.cpp; path = src/imgui/imgui_widgets.cpp; sourceTree = SOURCE_ROOT; };
+		B4F8DA852BF7479DB3B13F93 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/base64.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base64.cpp; path = CGL/src/base64.cpp; sourceTree = SOURCE_ROOT; };
+		B4FD7AC1D71744E48E58E2EF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/backends/imgui_impl_opengl2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_opengl2.cpp; path = src/imgui/backends/imgui_impl_opengl2.cpp; sourceTree = SOURCE_ROOT; };
+		B54BA69E71B6436B984B8453 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/ambient_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ambient_light.h; path = src/scene/gl_scene/ambient_light.h; sourceTree = SOURCE_ROOT; };
+		B5AF2F8C7AFE4F2F89813431 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = meshEdit.h; path = src/application/meshEdit.h; sourceTree = SOURCE_ROOT; };
+		B760254CD110471DBFCB5300 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = raytraced_renderer.h; path = src/pathtracer/raytraced_renderer.h; sourceTree = SOURCE_ROOT; };
+		B785AA3873A344ABB8408D97 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/matrix3x3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix3x3.cpp; path = CGL/src/matrix3x3.cpp; sourceTree = SOURCE_ROOT; };
+		B7B19C6897D74A8987B3A2E5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/viewer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = viewer.cpp; path = CGL/src/viewer.cpp; sourceTree = SOURCE_ROOT; };
+		B873AF452176479AABAC03CD /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = material_info.h; path = src/scene/collada/material_info.h; sourceTree = SOURCE_ROOT; };
+		B94ABED6A16E422B88142E3C /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = CGL/deps/glfw/src/posix_thread.h; sourceTree = SOURCE_ROOT; };
+		B97DB838BA004168BDA74F50 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bbox.cpp; path = src/scene/bbox.cpp; sourceTree = SOURCE_ROOT; };
+		B99FB2E550C744EBB73F9648 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B9BEA0592A71480AAC2026D9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collada_info.h; path = src/scene/collada/collada_info.h; sourceTree = SOURCE_ROOT; };
+		BB6583609C394145B432D27C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/material.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = material.h; path = src/scene/gl_scene/material.h; sourceTree = SOURCE_ROOT; };
+		BC8C1578058B4275BAF4CE09 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = CGL/deps/glfw/src/osmesa_context.h; sourceTree = SOURCE_ROOT; };
+		BCE493F9BBE446698220CFCA /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere_drawing.h; path = src/util/sphere_drawing.h; sourceTree = SOURCE_ROOT; };
+		BD07BD9E14644B3AB5D5C035 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collada.h; path = src/scene/collada/collada.h; sourceTree = SOURCE_ROOT; };
+		BE8C33A78D454F2BA5012089 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/mutablePriorityQueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mutablePriorityQueue.h; path = src/util/mutablePriorityQueue.h; sourceTree = SOURCE_ROOT; };
+		C309607087DC4F269862FBEA /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bvh.h; path = src/scene/bvh.h; sourceTree = SOURCE_ROOT; };
+		C694C9B5CC294BFAA7E4AFEC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/primitive.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = primitive.h; path = src/scene/primitive.h; sourceTree = SOURCE_ROOT; };
+		C738D6D0593248F789A36434 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/random_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = random_util.h; path = src/util/random_util.h; sourceTree = SOURCE_ROOT; };
+		C7B443330AE741E9BB9291F3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera_info.h; path = src/scene/collada/camera_info.h; sourceTree = SOURCE_ROOT; };
+		C9787C0835924B828D9B44F1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = CGL/deps/glfw/src/cocoa_time.c; sourceTree = SOURCE_ROOT; };
+		CAB4F2A5C35446C7AAF72ADC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/ray.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ray.h; path = src/pathtracer/ray.h; sourceTree = SOURCE_ROOT; };
+		CD19DE517A7C45FDA98CCD8E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/visual_debugger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = visual_debugger.cpp; path = src/application/visual_debugger.cpp; sourceTree = SOURCE_ROOT; };
+		CE08543D80C943B6AF9BA4A5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = CGL/deps/glfw/include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		CE89A6FE0E10441E8B08D22D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere.h; path = src/scene/sphere.h; sourceTree = SOURCE_ROOT; };
+		D02E8536866E4E9DA647EAB1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = object.h; path = src/scene/object.h; sourceTree = SOURCE_ROOT; };
+		D26F4B32F3DF4B5585BE09AD /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera.h; path = src/pathtracer/camera.h; sourceTree = SOURCE_ROOT; };
+		D418D99D130C438C869177ED /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = light_info.h; path = src/scene/collada/light_info.h; sourceTree = SOURCE_ROOT; };
+		D4448795C39040DE94FBA474 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/scene/gl_scene/scene.h; sourceTree = SOURCE_ROOT; };
+		D6D9223AA6D44E61ADDDB477 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bbox.h; path = src/scene/bbox.h; sourceTree = SOURCE_ROOT; };
+		D6FAE63FEF74492CB74AAE9E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = collada.cpp; path = src/scene/collada/collada.cpp; sourceTree = SOURCE_ROOT; };
+		D92CA434FACC4E138670AC37 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = CGL/deps/glfw/src/egl_context.h; sourceTree = SOURCE_ROOT; };
+		DB0F34C9B86C44E4B06175A1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_draw.cpp; path = src/imgui/imgui_draw.cpp; sourceTree = SOURCE_ROOT; };
+		DC7B53659C6B4667B9E6B47F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh.h; path = src/scene/gl_scene/mesh.h; sourceTree = SOURCE_ROOT; };
+		DD41E745959E40D1942D3687 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sampler.cpp; path = src/pathtracer/sampler.cpp; sourceTree = SOURCE_ROOT; };
+		DF65949C2C6D446E8C5412B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = halfEdgeMesh.cpp; path = src/util/halfEdgeMesh.cpp; sourceTree = SOURCE_ROOT; };
+		E06CAA6B251F4C0BA0A56EEB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/advanced_bsdf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = advanced_bsdf.cpp; path = src/pathtracer/advanced_bsdf.cpp; sourceTree = SOURCE_ROOT; };
+		E085211A7765411884D5F451 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = application.h; path = src/application/application.h; sourceTree = SOURCE_ROOT; };
+		E0D85B190E674CC9AF010A0E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pathtracer.h; path = src/pathtracer/pathtracer.h; sourceTree = SOURCE_ROOT; };
+		E1048A03D12B4FCD9DFA15BB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collada.h; path = src/scene/collada/collada.h; sourceTree = SOURCE_ROOT; };
+		E15FEB58D98D46CFAF08AE3C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bsdf.h; path = src/pathtracer/bsdf.h; sourceTree = SOURCE_ROOT; };
+		E1F49D1752B24DD6946957A3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/area_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = area_light.h; path = src/scene/gl_scene/area_light.h; sourceTree = SOURCE_ROOT; };
+		E2BA4E7311F94FDC90690840 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere.cpp; path = src/scene/gl_scene/sphere.cpp; sourceTree = SOURCE_ROOT; };
+		E4F1A2C69E33451D9E370011 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = light_info.cpp; path = src/scene/collada/light_info.cpp; sourceTree = SOURCE_ROOT; };
+		E8CF7565F3A3446F93AADBE7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bsdf.h; path = src/pathtracer/bsdf.h; sourceTree = SOURCE_ROOT; };
+		E94989CFD07C4BF79ED53D6E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/scene/gl_scene/scene.h; sourceTree = SOURCE_ROOT; };
+		ED5820226D14402486601B30 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = CGL/deps/glfw/src/context.c; sourceTree = SOURCE_ROOT; };
+		EE35A4B92CFF422F889EA38A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera_info.cpp; path = src/scene/collada/camera_info.cpp; sourceTree = SOURCE_ROOT; };
+		EE4B6E240ED14BE6A7F48AF0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera_info.h; path = src/scene/collada/camera_info.h; sourceTree = SOURCE_ROOT; };
+		F22AF93182DD4B1499BDC711 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lodepng.cpp; path = src/util/lodepng.cpp; sourceTree = SOURCE_ROOT; };
+		F8019EE2D3864FD99EED4DE4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bsdf.cpp; path = src/pathtracer/bsdf.cpp; sourceTree = SOURCE_ROOT; };
+		FA34BEDB654B493EAE8270D4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere.h; path = src/scene/gl_scene/sphere.h; sourceTree = SOURCE_ROOT; };
+		FA39AB5AB6B6408E9576B626 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh_view.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh_view.h; path = src/scene/gl_scene/mesh_view.h; sourceTree = SOURCE_ROOT; };
+		FAD14C1CB79D4B139AF9CC78 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector4D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector4D.cpp; path = CGL/src/vector4D.cpp; sourceTree = SOURCE_ROOT; };
+		FBBD6C6DAE0C43288FCAF9C8 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = environment_light.h; path = src/scene/environment_light.h; sourceTree = SOURCE_ROOT; };
+		FCCE57624BED4B55BD62B9AD /* pathtracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = pathtracer; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EF43E459D5B4DB3BB4739D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A07A9C4C494CDAA00210BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6C0456936E24355A249471E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E096A3E001144630BED70E7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABE2A5BA022447A99F592FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0088971576D1450C813D2454 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				72A15D84D8534548BEBDEF64 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/glew.c */,
+				1713DB5C1D12405AA261BAE2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/glewinfo.c */,
+				87EAE96B6DAA4342BC479748 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/visualinfo.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		0B7ED4AEABA447DF97983491 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EC79FE661C0454A9F7816A7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.cpp */,
+				823CC4A9428143E49881E3C6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/main.cpp */,
+				6A155EFE269B47DEAC8DE28C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.cpp */,
+				CD19DE517A7C45FDA98CCD8E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/visual_debugger.cpp */,
+				0E5B7DDFB2AB4A588145925A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/backends/imgui_impl_glfw.cpp */,
+				B4FD7AC1D71744E48E58E2EF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/backends/imgui_impl_opengl2.cpp */,
+				A4FFB048390E47E8B46F29D0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui.cpp */,
+				DB0F34C9B86C44E4B06175A1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_draw.cpp */,
+				704E19094F61401EA9CE02BF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_tables.cpp */,
+				B3B609D69C324996AA67E2DF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_widgets.cpp */,
+				E06CAA6B251F4C0BA0A56EEB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/advanced_bsdf.cpp */,
+				A9CC8D7489F04301A9666E7E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera_lens.cpp */,
+				093AC3BA44AE478F8F368080 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.cpp */,
+				DD41E745959E40D1942D3687 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.cpp */,
+				EE35A4B92CFF422F889EA38A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.cpp */,
+				D6FAE63FEF74492CB74AAE9E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.cpp */,
+				E4F1A2C69E33451D9E370011 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.cpp */,
+				16B08225139B4356AB305590 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.cpp */,
+				2137087DD1BA4887BD9EC6DF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.cpp */,
+				6CEF036A40DE41668981F42F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.cpp */,
+				95DA41BB8259464D94AE1F27 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.cpp */,
+				4CD10473E109486B8F12278E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.cpp */,
+				24862876F30947A8BCDA73E2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.cpp */,
+				E2BA4E7311F94FDC90690840 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.cpp */,
+				2F1FFDF860594A1284C9C9BC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.cpp */,
+				DF65949C2C6D446E8C5412B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.cpp */,
+				F22AF93182DD4B1499BDC711 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.cpp */,
+				303EBA4B73964C2DBBD2B194 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		0E8ABD4903054C3287D0F7D6 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4F8DA852BF7479DB3B13F93 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/base64.cpp */,
+				61F7914F5D3E4B7F9930C520 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/color.cpp */,
+				0F23BBFE0D88407582B5399F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/complex.cpp */,
+				974044327F084462B38B875E /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/lodepng.cpp */,
+				B785AA3873A344ABB8408D97 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/matrix3x3.cpp */,
+				6C3CD868AAC44381AD232620 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/matrix4x4.cpp */,
+				6C0DD2262812490B85A4A8CE /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/osdfont.cpp */,
+				36686CBB022B413A8426EB80 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/osdtext.cpp */,
+				042DC418278D46B1BD4CECA4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/path.cpp */,
+				7E7E3808BAF642A083DEE295 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/quaternion.cpp */,
+				21E40A1C905A48648AA9B897 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/tinyxml2.cpp */,
+				330543D9B4864582A6C41C68 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector2D.cpp */,
+				8A3378ED60304D2FB8178F18 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector3D.cpp */,
+				FAD14C1CB79D4B139AF9CC78 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector4D.cpp */,
+				B7B19C6897D74A8987B3A2E5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/viewer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		17774D3D04834920BEA0F563 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B033768B58346DF93062E44 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D30CBDFBFCF49E7839D0479 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include/GLFW/glfw3.h */,
+				CE08543D80C943B6AF9BA4A5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include/GLFW/glfw3native.h */,
+				911E287E31AF44B1BD792ADD /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_joystick.h */,
+				B37CD24FC62F4E9E83775C61 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_platform.h */,
+				D92CA434FACC4E138670AC37 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/egl_context.h */,
+				73565D544D9F4C0A82DB81C3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/internal.h */,
+				0B42ED904A0745A6B698CC34 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/mappings.h */,
+				4EEA916926D749408C38FE2F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/nsgl_context.h */,
+				BC8C1578058B4275BAF4CE09 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/osmesa_context.h */,
+				B94ABED6A16E422B88142E3C /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/posix_thread.h */,
+				1501D0A95DC543A3B430244E /* /Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src/glfw_config.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		2EA9F9A6234A4931B2CB9413 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				30D3C58B52604F498B822540 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.h */,
+				14555B2E2FA942809E93BC89 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.h */,
+				27792FB2C295407BA023D59B /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/renderer.h */,
+				E15FEB58D98D46CFAF08AE3C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.h */,
+				D26F4B32F3DF4B5585BE09AD /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.h */,
+				7192CA67075943E1953B9CF2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/intersection.h */,
+				E0D85B190E674CC9AF010A0E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.h */,
+				CAB4F2A5C35446C7AAF72ADC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/ray.h */,
+				42F7D562B56749AEA6BAF649 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.h */,
+				A1CBCB2F3B9D4D0185ADACAC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.h */,
+				7B570AE42039479CA5501F80 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/aggregate.h */,
+				D6D9223AA6D44E61ADDDB477 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.h */,
+				261E08D00B314269B08A5889 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.h */,
+				EE4B6E240ED14BE6A7F48AF0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.h */,
+				E1048A03D12B4FCD9DFA15BB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.h */,
+				66A623C97D2548668DA940E0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada_info.h */,
+				D418D99D130C438C869177ED /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.h */,
+				B873AF452176479AABAC03CD /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.h */,
+				629A87E90DBA40E9BD63FD2D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.h */,
+				951B05DE65C44B64B0AB7888 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.h */,
+				FBBD6C6DAE0C43288FCAF9C8 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.h */,
+				626C08A9C92E48FEBC99E30F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/ambient_light.h */,
+				E1F49D1752B24DD6946957A3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/area_light.h */,
+				23DB52CE24734885923D98BE /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/directional_light.h */,
+				3B5468CF5702466DB91047AB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/draw_style.h */,
+				274A0ABE87854DAA8E959EC2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/environment_light.h */,
+				BB6583609C394145B432D27C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/material.h */,
+				72FBD5CAD3154F609059266C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.h */,
+				FA39AB5AB6B6408E9576B626 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh_view.h */,
+				534E7F3C52574977BA7E4C60 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/point_light.h */,
+				D4448795C39040DE94FBA474 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.h */,
+				FA34BEDB654B493EAE8270D4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.h */,
+				7A5A02136B7642D3B801C439 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/spot_light.h */,
+				607037C5A1C74B62BE90D158 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.h */,
+				D02E8536866E4E9DA647EAB1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.h */,
+				0F0ED166CFEE4AB99BC1F2D9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/primitive.h */,
+				6FADAD3F7EF14BB8958401C3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/scene.h */,
+				9519B22469DC4895B12F1FB5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.h */,
+				23342F36464E4B53B499E4C3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.h */,
+				747471175FA64AF1AF504B1D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.h */,
+				887F2015AC2344BB8A4F2653 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/image.h */,
+				80C7A5E1D9D541419EDDA2A4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.h */,
+				BE8C33A78D454F2BA5012089 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/mutablePriorityQueue.h */,
+				C738D6D0593248F789A36434 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/random_util.h */,
+				587015B6ABBB4C618F649AF5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.h */,
+				3A77FE8B64DF4498A1FADDB1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/work_queue.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		2FAEB82684044DE1AB74914A /* pt31 */ = {
+			isa = PBXGroup;
+			children = (
+				D7E304EEB35F49138C5CE236 /* Source Files */,
+				2EA9F9A6234A4931B2CB9413 /* Header Files */,
+				66FBCCDBBC7E44FA9A6833E4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CMakeLists.txt */,
+			);
+			name = pt31;
+			sourceTree = "<group>";
+		};
+		4029A2FBE7D44EC7A9848DD5 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				E085211A7765411884D5F451 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.h */,
+				B5AF2F8C7AFE4F2F89813431 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.h */,
+				234D5035953E47E48DDD39CF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/renderer.h */,
+				E8CF7565F3A3446F93AADBE7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.h */,
+				8BB77FCB4E4C4DFBB4C2016C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.h */,
+				22A8BB9A3B4C4439A0813DF0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/intersection.h */,
+				6CE60F188A9A4453B27355B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.h */,
+				02C12F4D217346DABCBD2D86 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/ray.h */,
+				B760254CD110471DBFCB5300 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.h */,
+				A7FE64037E3546AE8300CB6D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.h */,
+				7DC08920ADCC4549A4ED1CD7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/aggregate.h */,
+				B09AB1C48A804742BE967D8B /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.h */,
+				C309607087DC4F269862FBEA /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.h */,
+				C7B443330AE741E9BB9291F3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.h */,
+				BD07BD9E14644B3AB5D5C035 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.h */,
+				B9BEA0592A71480AAC2026D9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada_info.h */,
+				2A9CAF9AEB1748D2A5F0738C /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.h */,
+				1E9A6D83A7DC449CAD8B9133 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.h */,
+				60201FBB447E40A2B009B2A8 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.h */,
+				5284316E48294F92B9D04415 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.h */,
+				22CAFAD21D2E45B383D37C61 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.h */,
+				B54BA69E71B6436B984B8453 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/ambient_light.h */,
+				63D6B4B5A2194CE0AD1D0CC8 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/area_light.h */,
+				74D02BFDAE414A3E877C2636 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/directional_light.h */,
+				026D91024E64465AAC468C54 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/draw_style.h */,
+				2765C9E593B041438838AB70 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/environment_light.h */,
+				87A46F66C87C4CA1B21648B6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/material.h */,
+				DC7B53659C6B4667B9E6B47F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.h */,
+				907543C26D794F30A5AF64CB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh_view.h */,
+				48E8F43CB6FD410784507758 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/point_light.h */,
+				E94989CFD07C4BF79ED53D6E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.h */,
+				9E4F06D456234184947FB1D7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.h */,
+				721531FB813E4F1BA7988287 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/spot_light.h */,
+				5DA42B7C31074C94A9A98902 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.h */,
+				A83D8073EFC44C81AADA3826 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.h */,
+				C694C9B5CC294BFAA7E4AFEC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/primitive.h */,
+				3A6235C99DC942ACBEEA417F /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/scene.h */,
+				CE89A6FE0E10441E8B08D22D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.h */,
+				97AFBC31029D46AD8F7C3A29 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.h */,
+				4A62E0277B0E468784B22ADC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.h */,
+				432C62C87E8F431C86728D42 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/image.h */,
+				51982B4285EE49B49F7A2D97 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.h */,
+				80C7CA03481844BF9EEA2B32 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/mutablePriorityQueue.h */,
+				8C26955A05384C248DF80B58 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/random_util.h */,
+				BCE493F9BBE446698220CFCA /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.h */,
+				41E06DD59BBA44D5876307C9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/work_queue.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		53608996E4134B29AE448EDA /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6C7EAAC8746A4304BD4F6903 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				2B033768B58346DF93062E44 /* Header Files */,
+				C80A35C047674301A30546DF /* Source Files */,
+				99564C6797F84CF8B73242B1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		7EA4C27A8917468DBB14338E /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				AB82C103071B427097E35A19 /* CMake Rules */,
+				2A847C40CC32472CAFE556FF /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		8EEE456DF6C344A4A30C459E /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				7EA4C27A8917468DBB14338E /* uninstall */,
+				6C7EAAC8746A4304BD4F6903 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		9C621752A0154CB89D1202DA /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				0088971576D1450C813D2454 /* Source Files */,
+				4623452FD6C447B69AD39076 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/CMakeLists.txt */,
+			);
+			name = glew;
+			sourceTree = "<group>";
+		};
+		9EC5FD68DA3A4186BBF94EBE /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				53608996E4134B29AE448EDA /* CMake Rules */,
+				497C8B9846BD44C1B0BC96D3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		AB82C103071B427097E35A19 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B9EB774D2EDD44508645B0BB /* pathtracer */ = {
+			isa = PBXGroup;
+			children = (
+				0B7ED4AEABA447DF97983491 /* Source Files */,
+				4029A2FBE7D44EC7A9848DD5 /* Header Files */,
+				B99FB2E550C744EBB73F9648 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CMakeLists.txt */,
+			);
+			name = pathtracer;
+			sourceTree = "<group>";
+		};
+		C80A35C047674301A30546DF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				720F0E98136B41A2B9B71A65 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_init.m */,
+				B348A1E895764E4194A2C5ED /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_joystick.m */,
+				B39D4D8CA72D487D8D087A08 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_monitor.m */,
+				C9787C0835924B828D9B44F1 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_time.c */,
+				98202771485B4D3A9D4142FB /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_window.m */,
+				ED5820226D14402486601B30 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/context.c */,
+				8412706BDC2C430BA4BE7626 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/egl_context.c */,
+				7B5E3CE641FA4F6CB505B27B /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/init.c */,
+				3B1705B6C6A449D5BE7316B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/input.c */,
+				63C7B54AB4874AD2BB368366 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/monitor.c */,
+				B0C22A35D79744D28064A9C0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/nsgl_context.m */,
+				2CE1774BAB644F4590579391 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/osmesa_context.c */,
+				76A556A1C818444B831A2FB3 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/posix_thread.c */,
+				A4CA3B407B9E46A79B330894 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/vulkan.c */,
+				2F6DEB3C1936459FAC29216F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C83CA19EEEE644A186AB2E9D = {
+			isa = PBXGroup;
+			children = (
+				B9EB774D2EDD44508645B0BB /* pathtracer */,
+				2FAEB82684044DE1AB74914A /* pt31 */,
+				9EC5FD68DA3A4186BBF94EBE /* ALL_BUILD */,
+				E32F422BBEA048FEBD8F3E69 /* CGL */,
+				9C621752A0154CB89D1202DA /* glew */,
+				8EEE456DF6C344A4A30C459E /* GLFW3 */,
+				D4059A7AC2C64719A9A46355 /* Products */,
+				17774D3D04834920BEA0F563 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D4059A7AC2C64719A9A46355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AA8D8E6C7C949E797A7AB26 /* CGL */,
+				5F980F556D44426CAC2AE10F /* glew */,
+				4277ED09D0D44EB885B02D14 /* glfw */,
+				FCCE57624BED4B55BD62B9AD /* pathtracer */,
+				61F79CEE9E6C462CB3D7F409 /* pt31 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7E304EEB35F49138C5CE236 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8019EE2D3864FD99EED4DE4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.cpp */,
+				65428D1E6868491FBC3FA610 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.cpp */,
+				8CBD8F9816434052BDE54BF6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.cpp */,
+				B97DB838BA004168BDA74F50 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.cpp */,
+				35F39A9342DE40A5BC3470C5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.cpp */,
+				85B90A3286044B14B6A81858 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.cpp */,
+				578BBE9F338449C2A02BECB2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.cpp */,
+				4D155CD645C64F0FA3DF3606 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E32F422BBEA048FEBD8F3E69 /* CGL */ = {
+			isa = PBXGroup;
+			children = (
+				0E8ABD4903054C3287D0F7D6 /* Source Files */,
+				7627EA70A3C3439EB56E8129 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/CMakeLists.txt */,
+			);
+			name = CGL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02AB29D4940345D288C884E1 /* pt31 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F11DD26B83943F085C4AA4A /* Build configuration list for PBXNativeTarget "pt31" */;
+			buildPhases = (
+				736C741853B04F1EBA6745B3 /* Sources */,
+				2EF43E459D5B4DB3BB4739D7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90EF68EEB3204D54A4B800E2 /* PBXTargetDependency */,
+				ECE08F728D3D4A8DA445521C /* PBXTargetDependency */,
+				C15D455AB5934684A6B38509 /* PBXTargetDependency */,
+				BE9BBDAC9CB44591980EA25D /* PBXTargetDependency */,
+			);
+			name = pt31;
+			productName = pt31;
+			productReference = 61F79CEE9E6C462CB3D7F409 /* pt31 */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1BFC05FD1B014893ADEE18B3 /* CGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B84CF321604174BCC4B4AE /* Build configuration list for PBXNativeTarget "CGL" */;
+			buildPhases = (
+				1E7A2BC010AA4A5EBD4E9ACF /* Sources */,
+				96A07A9C4C494CDAA00210BB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86ACFA436E8C4584ACCAAC7A /* PBXTargetDependency */,
+				4A4824160CE94D87A6C58ADF /* PBXTargetDependency */,
+			);
+			name = CGL;
+			productName = CGL;
+			productReference = 2AA8D8E6C7C949E797A7AB26 /* CGL */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4EC824DA12064D9EAD53CDDA /* pathtracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 478B3B4B69F94CE19F01FA75 /* Build configuration list for PBXNativeTarget "pathtracer" */;
+			buildPhases = (
+				86482D8AD2B14801A803DABA /* Sources */,
+				E096A3E001144630BED70E7B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				366DDAF162DB47BBBDB818E1 /* PBXTargetDependency */,
+				ED150FD010234A33A3C4DCBF /* PBXTargetDependency */,
+				7C0F56D5C7194F5AA1D4C8C6 /* PBXTargetDependency */,
+				9D399D7F6251480EA02DBAAD /* PBXTargetDependency */,
+				8186983074FB4453B95F3DF2 /* PBXTargetDependency */,
+			);
+			name = pathtracer;
+			productName = pathtracer;
+			productReference = FCCE57624BED4B55BD62B9AD /* pathtracer */;
+			productType = "com.apple.product-type.tool";
+		};
+		AC0C07AD39C1416BB09B88AA /* glew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F3C5BAB9BDF42CF8B751F01 /* Build configuration list for PBXNativeTarget "glew" */;
+			buildPhases = (
+				87816E1DB6B7401E9DA888BB /* Sources */,
+				EABE2A5BA022447A99F592FB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glew;
+			productName = glew;
+			productReference = 5F980F556D44426CAC2AE10F /* glew */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E2F3CF09693842A581CE6EC7 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4859DB7E076542928FECA136 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				C021218A6FC3411A9B9674CF /* Sources */,
+				B6C0456936E24355A249471E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 4277ED09D0D44EB885B02D14 /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58166E1EFF66474DB0CB3D83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1170;
+			};
+			buildConfigurationList = 80C21DEC72D3430D84DFE35E /* Build configuration list for PBXProject "Assignment3" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				483322CE8BBD4EFFA019A0AB /* Debug */,
+				EC001BC4EB59488C8C5CD97E /* Release */,
+				D62470D4AFF24A16954BB4CB /* MinSizeRel */,
+				A7AD2BFEB5F64F35985ABEDA /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = C83CA19EEEE644A186AB2E9D;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				79DDC98D80A745709ECBA975 /* ALL_BUILD */,
+				1BFC05FD1B014893ADEE18B3 /* CGL */,
+				96D541C9488948619344F9BC /* ZERO_CHECK */,
+				AC0C07AD39C1416BB09B88AA /* glew */,
+				E2F3CF09693842A581CE6EC7 /* glfw */,
+				24B7A29B7262428BA7EC1062 /* install */,
+				4EC824DA12064D9EAD53CDDA /* pathtracer */,
+				02AB29D4940345D288C884E1 /* pt31 */,
+				C9002FAC4990474E8A5013D1 /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F82F227423B4BF0BCAF7954 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/aghouas/dev/personal/p3_1-pathtracer/xcode -f /Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		409845E5D33F4E9A96636A4D /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw -f /Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		414F983A273E4FA4A6DBAF4C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/aghouas/dev/personal/p3_1-pathtracer/xcode -f /Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		89A0F835E2B14680AF69F3CD /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/aghouas/dev/personal/p3_1-pathtracer/xcode -f /Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		AA1CAC89C21F434984105CE0 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D8FB464AEE9145929F53E321 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D9A8B47ADB254B12AF0F1DB5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		FC42CB6CE75A4C8EB0C2E3F2 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E7A2BC010AA4A5EBD4E9ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC89952F18B24DC8844ED98F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/base64.cpp */,
+				AA4ABFF6F99E49C2958BD051 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/color.cpp */,
+				5B31D774458C4A4A8B5C7E3C /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/complex.cpp */,
+				7AB1D7CCC0564EB88907CDD2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/lodepng.cpp */,
+				A344F398AF6B458BA74C294B /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/matrix3x3.cpp */,
+				19B6912754A840C5986FFE08 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/matrix4x4.cpp */,
+				2B24322C15404BEFB052424D /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/osdfont.cpp */,
+				18440E6D30DB40F48A70AD50 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/osdtext.cpp */,
+				1523FB64748349CE9F165604 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/path.cpp */,
+				3EB98A87420B4C8497D4B9F6 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/quaternion.cpp */,
+				EFA8AA3E790C459FBD4EDD4C /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/tinyxml2.cpp */,
+				DB96C2012E0B420C8741FC38 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector2D.cpp */,
+				37E2FD7C1B234123852C7F7A /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector3D.cpp */,
+				48794AAAC20543A88FA78B43 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/vector4D.cpp */,
+				46258158C0E7456BBE1AC61E /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/src/viewer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736C741853B04F1EBA6745B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD24E74514241E4B9C2575E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/bsdf.cpp */,
+				333CF587A6D3406BB0591E9D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera.cpp */,
+				0DC1770022414F839CE910C0 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/pathtracer.cpp */,
+				1BC3EBC509F7456D87033887 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bbox.cpp */,
+				8B3D91156831460D9AE3D263 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/bvh.cpp */,
+				DAE3D104404D48758415A3C4 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/light.cpp */,
+				39E2E667A98E49A29A2F794A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/sphere.cpp */,
+				0F749BF5CAD041349EDEA396 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/triangle.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86482D8AD2B14801A803DABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A60FB0B9344358A8510ABF /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/application.cpp */,
+				1B5CBF8BD173493FBF11A721 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/main.cpp */,
+				2E3128CC74964EDBBD6B07FC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/meshEdit.cpp */,
+				F74B7FDA8C8F419AA423E78E /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/application/visual_debugger.cpp */,
+				8EC40CC74E7D46C0B507262A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/backends/imgui_impl_glfw.cpp */,
+				305B220FC6744FBFB6F936AB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/backends/imgui_impl_opengl2.cpp */,
+				94BF6DFB014B4EB181984B8D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui.cpp */,
+				F3D024DEE30E4307928C9F99 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_draw.cpp */,
+				898E8204362C45C2A79CAF02 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_tables.cpp */,
+				11681201AA404CA68725F3B7 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/imgui/imgui_widgets.cpp */,
+				B4FE7A65178D49EEBBBD86C2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/advanced_bsdf.cpp */,
+				D53C536631524D54843DFABD /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/camera_lens.cpp */,
+				A6A854B296664A93BB8FEDD9 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/raytraced_renderer.cpp */,
+				C0550A9809C04174B8C719DE /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/pathtracer/sampler.cpp */,
+				45EC079A5FB34F3EBF086760 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/camera_info.cpp */,
+				7B08BDF325F14C868DF40C61 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/collada.cpp */,
+				93558208AA1E45F0AF7967BC /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/light_info.cpp */,
+				D73C57B2DEDE42B48A2B8298 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/material_info.cpp */,
+				81B21A3CAF0543C59B4AF080 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/polymesh_info.cpp */,
+				D5CFD9BE6C8D44B1AA932036 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/collada/sphere_info.cpp */,
+				4D60B14EC40E49C3AF4D77DB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/environment_light.cpp */,
+				A80EF6D261A54DD9BE39473B /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/mesh.cpp */,
+				F1921EE6CCCF485BB2F6EB1A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/scene.cpp */,
+				AEB673B089734AE0BB05732D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/gl_scene/sphere.cpp */,
+				0DA02C8247224B079341EC1A /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/scene/object.cpp */,
+				F5E7A6CC7CF344B08329D69D /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/halfEdgeMesh.cpp */,
+				7E64E095BF5244D18236EAFB /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/lodepng.cpp */,
+				1BF2A1349F6846F985DB4925 /* /Users/aghouas/dev/personal/p3_1-pathtracer/src/util/sphere_drawing.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87816E1DB6B7401E9DA888BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEC894218CD4760913D7B1E /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/glew.c */,
+				B06E1682E90248C7B687E524 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/glewinfo.c */,
+				0ED3E3351E9A4A0299119A64 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/src/visualinfo.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C021218A6FC3411A9B9674CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC040E1609E94AFDAE038CC5 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_init.m */,
+				5DB2D80E5CD14FFCABB6B140 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_joystick.m */,
+				4BAA2871E27843118EDA00DC /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_monitor.m */,
+				99C693152DCB466E99128ED2 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_time.c */,
+				C93D57E394EC4F969CA5E682 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/cocoa_window.m */,
+				B15C8D7F404C4A02955C9349 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/context.c */,
+				948C3EC470AE4F918A5E2A41 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/egl_context.c */,
+				01597573B9424FCCAD5D3B8C /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/init.c */,
+				3BEAE8C10DB441BA9B3AF61D /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/input.c */,
+				C1A757B767C5468EBE872439 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/monitor.c */,
+				245FC45B89EB4FB58595D74F /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/nsgl_context.m */,
+				311B6E24B1084415A7AB4F90 /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/osmesa_context.c */,
+				F802C501BDEA43F5BDAEB31B /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/posix_thread.c */,
+				AEB4CA88CF2B4182ACBD945C /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/vulkan.c */,
+				B101CFA8FB7A474B8B9723FA /* /Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D1EBE4E5B824427AE49DDB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79DDC98D80A745709ECBA975 /* ALL_BUILD */;
+			targetProxy = 3B361CA75492425780432A73 /* PBXContainerItemProxy */;
+		};
+		366DDAF162DB47BBBDB818E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96D541C9488948619344F9BC /* ZERO_CHECK */;
+			targetProxy = 02B2224976D240D29209E6C8 /* PBXContainerItemProxy */;
+		};
+		4A4824160CE94D87A6C58ADF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2F3CF09693842A581CE6EC7 /* glfw */;
+			targetProxy = EE7674A71B8B401986EA27F1 /* PBXContainerItemProxy */;
+		};
+		557C89F683FC4A019B1524AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02AB29D4940345D288C884E1 /* pt31 */;
+			targetProxy = 3EDDE92245764129AA90D7E1 /* PBXContainerItemProxy */;
+		};
+		66C1FC7BB9E441B5A91B1A4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2F3CF09693842A581CE6EC7 /* glfw */;
+			targetProxy = 374D4A3AB96C4CCE88A358FD /* PBXContainerItemProxy */;
+		};
+		7C0F56D5C7194F5AA1D4C8C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BFC05FD1B014893ADEE18B3 /* CGL */;
+			targetProxy = 10483FFD8ACA40D3BE9D76D8 /* PBXContainerItemProxy */;
+		};
+		8186983074FB4453B95F3DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2F3CF09693842A581CE6EC7 /* glfw */;
+			targetProxy = F7617F735FAE4FADB954940C /* PBXContainerItemProxy */;
+		};
+		86ACFA436E8C4584ACCAAC7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0C07AD39C1416BB09B88AA /* glew */;
+			targetProxy = 560CAE5110764059B0E50DD3 /* PBXContainerItemProxy */;
+		};
+		905DC89CDE4140F2A12725A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BFC05FD1B014893ADEE18B3 /* CGL */;
+			targetProxy = EC0B9CB773714B8BAEBECE06 /* PBXContainerItemProxy */;
+		};
+		90EF68EEB3204D54A4B800E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96D541C9488948619344F9BC /* ZERO_CHECK */;
+			targetProxy = FE5946E7373D4CE7BC094866 /* PBXContainerItemProxy */;
+		};
+		9D399D7F6251480EA02DBAAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0C07AD39C1416BB09B88AA /* glew */;
+			targetProxy = 7FF946B9BEC84EE1AE7357B8 /* PBXContainerItemProxy */;
+		};
+		A44197A4F62E46DFBFD1A309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0C07AD39C1416BB09B88AA /* glew */;
+			targetProxy = 0CB6A7DD52244BB79997C548 /* PBXContainerItemProxy */;
+		};
+		B92F191283F34F84B9EFC5C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96D541C9488948619344F9BC /* ZERO_CHECK */;
+			targetProxy = 3643A55771534E10A8C140DF /* PBXContainerItemProxy */;
+		};
+		BE9BBDAC9CB44591980EA25D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2F3CF09693842A581CE6EC7 /* glfw */;
+			targetProxy = 6333BECA03464CEFB572C15E /* PBXContainerItemProxy */;
+		};
+		C15D455AB5934684A6B38509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0C07AD39C1416BB09B88AA /* glew */;
+			targetProxy = 1C60CDE945004866AD6A070E /* PBXContainerItemProxy */;
+		};
+		ECE08F728D3D4A8DA445521C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BFC05FD1B014893ADEE18B3 /* CGL */;
+			targetProxy = 7C13D99035354982996D7FFC /* PBXContainerItemProxy */;
+		};
+		ED150FD010234A33A3C4DCBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02AB29D4940345D288C884E1 /* pt31 */;
+			targetProxy = CCC12FB698124AF7AFDF1A4D /* PBXContainerItemProxy */;
+		};
+		F3F032E6470F4808AD66C96C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EC824DA12064D9EAD53CDDA /* pathtracer */;
+			targetProxy = 30E5BF05A0974A39A548846F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05843D658F5447C69952645A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		086AFD6FE3A04E29A8B84132 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC        -DNDEBUG -fPIC -Wall '-std=c99' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0A521709BE6949558F43ED7E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/src","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui/backends","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2        -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pt31;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1FCB188B8D384CC2B71F7D46 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC     -DNDEBUG -fPIC -Wall '-std=c99' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2608BA46C8FE4AD88B8CABD5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL",/usr/local/include/freetype2,"/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2     -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2F2D824A3EDF4BA0977B239A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL",/usr/local/include/freetype2,"/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2     -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2FECEF91E2EF4EFC851622A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		34338BE5166A4171B170F696 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3692ABD95675495BB254AE3A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		3738D031BC2B452393422369 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		39348B258D8F4C2B9365000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3CB7AEC9DBD346758D58D350 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3D537CC98C0D4EBB8893F165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		41723AB1ACFE49AFBC2B7CCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/build";
+			};
+			name = Debug;
+		};
+		556F2160208B4E6DA563D6E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC     -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		572089E3BC5B4488AF42054B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		585B3A4E3AE3495280A7E051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC     -DNDEBUG -fPIC -Wall '-std=c99' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6092FBD6B20347CF9634C8CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/build";
+			};
+			name = Release;
+		};
+		6C292F6CC8404B4C8CD6D5C3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		72AF68E1964B46038C2AD1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/src","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui/backends","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2    ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pt31;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7D99EB8C86754DEB9B0A4779 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		81EC5445BF79404C8CEEF8C4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC     -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8634A6B1AA504A7AA608511B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8E2E601930744804B449F8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL",/usr/local/include/freetype2,"/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2    ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9BD33E94F8F44ED59CC362CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/src","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui/backends","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2    ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/Debug/libpt31.a","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/Debug/libCGL.a",/usr/local/lib/libfreetype.dylib,"/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glew/Debug/libglew.a","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src/Debug/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A1A03B665ADB49999F68636E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/src","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui/backends","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2        -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/RelWithDebInfo/libpt31.a","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/RelWithDebInfo/libCGL.a",/usr/local/lib/libfreetype.dylib,"/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glew/RelWithDebInfo/libglew.a","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src/RelWithDebInfo/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A55E4F5573CB45EB82A1B55A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC        -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A5B6C81D20944DE0899A22D9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL",/usr/local/include/freetype2,"/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2        -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B0E792F132DA4667898C7537 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/src","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui/backends","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2     -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/MinSizeRel/libpt31.a","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/MinSizeRel/libCGL.a",/usr/local/lib/libfreetype.dylib,"/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glew/MinSizeRel/libglew.a","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src/MinSizeRel/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B138E9F27F0741BF874F9724 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B151EC01C702489881333A10 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B2EFE15F3730431A88FFE07B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C147519FDE914E14A3AFA626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/src","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui/backends","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2     -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/Release/libpt31.a","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/Release/libCGL.a",/usr/local/lib/libfreetype.dylib,"/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glew/Release/libglew.a","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src/Release/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks","-framework OpenGL");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pathtracer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		CA3A28DB93ED466793CB5086 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CEF8B54A9ED94C2CB16286CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E890F1E404B34D78B2CE93ED /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		EFD0717B223946E98D710968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC    ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F26B7398C81445DA943F8CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/src","/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC    -fPIC -Wall '-std=c99' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F68E91A9E2AC48DF9E994079 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/src","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui/backends","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2     -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pt31;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FF889E13294C4EAB9F2CF851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/aghouas/dev/personal/p3_1-pathtracer/src","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glew/include","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/deps/glfw/include","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui","/Users/aghouas/dev/personal/p3_1-pathtracer/./src/imgui/backends","/Users/aghouas/dev/personal/p3_1-pathtracer/CGL/include/CGL");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64 -fPIC      -mavx2     -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pt31;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27B84CF321604174BCC4B4AE /* Build configuration list for PBXNativeTarget "CGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2E601930744804B449F8E8 /* Debug */,
+				2F2D824A3EDF4BA0977B239A /* Release */,
+				2608BA46C8FE4AD88B8CABD5 /* MinSizeRel */,
+				A5B6C81D20944DE0899A22D9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		478B3B4B69F94CE19F01FA75 /* Build configuration list for PBXNativeTarget "pathtracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD33E94F8F44ED59CC362CF /* Debug */,
+				C147519FDE914E14A3AFA626 /* Release */,
+				B0E792F132DA4667898C7537 /* MinSizeRel */,
+				A1A03B665ADB49999F68636E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4859DB7E076542928FECA136 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26B7398C81445DA943F8CE3 /* Debug */,
+				585B3A4E3AE3495280A7E051 /* Release */,
+				1FCB188B8D384CC2B71F7D46 /* MinSizeRel */,
+				086AFD6FE3A04E29A8B84132 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4F11DD26B83943F085C4AA4A /* Build configuration list for PBXNativeTarget "pt31" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72AF68E1964B46038C2AD1E7 /* Debug */,
+				FF889E13294C4EAB9F2CF851 /* Release */,
+				F68E91A9E2AC48DF9E994079 /* MinSizeRel */,
+				0A521709BE6949558F43ED7E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		52273E6B8C1D47329F717470 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2EFE15F3730431A88FFE07B /* Debug */,
+				CEF8B54A9ED94C2CB16286CD /* Release */,
+				B151EC01C702489881333A10 /* MinSizeRel */,
+				572089E3BC5B4488AF42054B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		61103EF8881F42B1B243AC59 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D537CC98C0D4EBB8893F165 /* Debug */,
+				2FECEF91E2EF4EFC851622A4 /* Release */,
+				3CB7AEC9DBD346758D58D350 /* MinSizeRel */,
+				7D99EB8C86754DEB9B0A4779 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		80C21DEC72D3430D84DFE35E /* Build configuration list for PBXProject "Assignment3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41723AB1ACFE49AFBC2B7CCE /* Debug */,
+				6092FBD6B20347CF9634C8CC /* Release */,
+				3738D031BC2B452393422369 /* MinSizeRel */,
+				3692ABD95675495BB254AE3A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8FA4F4DDCCA04F4A89DA6827 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8634A6B1AA504A7AA608511B /* Debug */,
+				39348B258D8F4C2B9365000A /* Release */,
+				E890F1E404B34D78B2CE93ED /* MinSizeRel */,
+				34338BE5166A4171B170F696 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		93482EC2C27741488A0DED27 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B138E9F27F0741BF874F9724 /* Debug */,
+				05843D658F5447C69952645A /* Release */,
+				6C292F6CC8404B4C8CD6D5C3 /* MinSizeRel */,
+				CA3A28DB93ED466793CB5086 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9F3C5BAB9BDF42CF8B751F01 /* Build configuration list for PBXNativeTarget "glew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFD0717B223946E98D710968 /* Debug */,
+				556F2160208B4E6DA563D6E6 /* Release */,
+				81EC5445BF79404C8CEEF8C4 /* MinSizeRel */,
+				A55E4F5573CB45EB82A1B55A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58166E1EFF66474DB0CB3D83 /* Project object */;
+}
