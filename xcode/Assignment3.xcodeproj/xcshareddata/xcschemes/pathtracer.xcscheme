@@ -50,6 +50,12 @@
             ReferencedContainer = "container:xcode/Assignment3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-t 8 -r 800 600 -f cow.png ../../dae/meshedit/cow.dae"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
