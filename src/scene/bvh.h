@@ -39,7 +39,7 @@ struct BVHNode {
 };
 
 /**
- * Bounding Volume Hierarchy for fast Ray - Primitive intersection.
+ * Bounding Volume Hierarchy for fast RØay - Primitive intersection.
  * Note that the BVHAccel is an Aggregate (A Primitive itself) that contains
  * all the primitives it was built from. Therefore once a BVHAccel Aggregate
  * is created, the original input primitives can be ignored from the scene

@@ -68,6 +68,7 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
 
     int count = 0;
 
+ //Iterative over all primitives and update bounding box to contain all primitives
   for (auto p = start; p != end; p++) {
     BBox bb = (*p)->get_bbox();
     bbox.expand(bb);
@@ -75,11 +76,10 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
   }
 
   BVHNode *node = new BVHNode(bbox);
-    
+    //Check if node should be leaf
     if(count <= max_leaf_size){
         node->start = start;
         node->end = end;
-        
         return node;
         
     } else {
@@ -143,7 +143,7 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
         vector<Primitive *> right_partition_final = right_partitions.at(most_balanced_dim);
     
         assert(left_partition_final.size() + right_partition_final.size() == count);
-        //update elements in orginall array
+        //update elements in orginal array
         for (int i = 0; i < left_partition_final.size(); i++) {
             *(start + i) = left_partition_final.at(i);
         }
@@ -168,30 +168,51 @@ bool BVHAccel::has_intersection(const Ray &ray, BVHNode *node) const {
   // Intersection version cannot, since it returns as soon as it finds
   // a hit, it doesn't actually have to find the closest hit.
 
-
-
-  for (auto p : primitives) {
-    total_isects++;
-    if (p->has_intersection(ray))
-      return true;
-  }
-  return false;
-
-
+    if(!node->bb.intersect(ray, ray.min_t, ray.max_t)) return false;
+    
+    if(node->isLeaf()){
+        //Test intersection with all primities inside node.
+        for(auto p = node->start; p != node->end; p++ ){
+            if((*p)->has_intersection(ray)){
+                total_isects++;
+                return true;
+            };
+        }
+        
+        return false;
+    }
+    
+    return has_intersection(ray, node->l) || has_intersection(ray, node->r);
 }
 
 bool BVHAccel::intersect(const Ray &ray, Intersection *i, BVHNode *node) const {
   // TODO (Part 2.3):
   // Fill in the intersect function.
+    
+    bool hit  = false;
+    
+    if(!node->bb.intersect(ray, ray.min_t, ray.max_t)) return false;
+    
+    //closest hit
+    if(node->isLeaf()){
+        for(auto p = node->start; p != node->end; p++ ){
+            if((*p)->intersect(ray, i)){
+                total_isects++;
+                hit = true;
+            }
+        }
+    }else{
+        hit = intersect(ray, i, node->l) || intersect(ray, i, node->r);
+    }
+    
+    return hit;
 
-
-
-  bool hit = false;
-  for (auto p : primitives) {
-    total_isects++;
-    hit = p->intersect(ray, i) || hit;
-  }
-  return hit;
+//  bool hit = false;
+//  for (auto p : primitives) {
+//    total_isects++;
+//    hit = p->intersect(ray, i) || hit;
+//  }
+//  return hit;
 
 
 }
