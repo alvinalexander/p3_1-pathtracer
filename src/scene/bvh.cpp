@@ -155,7 +155,6 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
         
         node->l = construct_bvh(start, next(start, left_partition_final.size()), max_leaf_size);
         node->r = construct_bvh(next(start, left_partition_final.size()), end, max_leaf_size);
-        
         return node;
         
     }
@@ -167,14 +166,17 @@ bool BVHAccel::has_intersection(const Ray &ray, BVHNode *node) const {
   // Take note that this function has a short-circuit that the
   // Intersection version cannot, since it returns as soon as it finds
   // a hit, it doesn't actually have to find the closest hit.
+    
+    double t0 = ray.min_t;
+    double t1 = ray.max_t;
 
-    if(!node->bb.intersect(ray, ray.min_t, ray.max_t)) return false;
+    if(!node->bb.intersect(ray, t0, t1)) return false;
     
     if(node->isLeaf()){
         //Test intersection with all primities inside node.
         for(auto p = node->start; p != node->end; p++ ){
+            total_isects++;
             if((*p)->has_intersection(ray)){
-                total_isects++;
                 return true;
             };
         }
@@ -191,18 +193,21 @@ bool BVHAccel::intersect(const Ray &ray, Intersection *i, BVHNode *node) const {
     
     bool hit  = false;
     
-    if(!node->bb.intersect(ray, ray.min_t, ray.max_t)) return false;
+    double t0 = ray.min_t;
+    double t1 = ray.max_t;
+
+    if(!node->bb.intersect(ray, t0, t1)) return false;
     
     //closest hit
     if(node->isLeaf()){
         for(auto p = node->start; p != node->end; p++ ){
-            if((*p)->intersect(ray, i)){
-                total_isects++;
-                hit = true;
-            }
+            total_isects++;
+            hit = (*p)->intersect(ray, i) || hit;
         }
     }else{
-        hit = intersect(ray, i, node->l) || intersect(ray, i, node->r);
+        bool hit_l = intersect(ray, i, node->l);
+        bool hit_r = intersect(ray, i, node->r);
+        hit = hit_l || hit_r;
     }
     
     return hit;
