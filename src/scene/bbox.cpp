@@ -14,7 +14,7 @@ bool BBox::intersect(const Ray& r, double& t0, double& t1) const {
   // If the ray intersected the bouding box within the range given by
   // t0, t1, update t0 and t1 with the new intersection times.
     
-    double tx_min, tx_max, ty_min, ty_max, tz_min, tz_max, t_min, t_max;
+    double tx_upper, tx_lower, tx_max, tx_min, ty_upper, ty_lower, ty_min, ty_max, tz_upper, tz_lower, tz_min, tz_max, t_upper, t_lower;
     
     Vector3D d = r.d;
     Vector3D o = r.o;
@@ -25,26 +25,31 @@ bool BBox::intersect(const Ray& r, double& t0, double& t1) const {
     }
     
     //compute tmin / tmax
-
      tx_min = (min.x - o.x) / d.x;
      tx_max = (max.x - o.x) / d.x;
+    tx_upper = std::max(tx_min, tx_max);
+    tx_lower = std::min(tx_min, tx_max);
     
       ty_min = (min.y - o.y) / d.y;
       ty_max = (max.y - o.y) / d.y;
+    ty_upper = std::max(ty_min, ty_max);
+    ty_lower = std::min(ty_min, ty_max);
 
       tz_min = (min.z - o.z) / d.z;
       tz_max = (max.z - o.z) / d.z;
+    tz_upper = std::max(tz_min, tz_max);
+    tz_lower = std::min(tz_min, tz_max);
     
     
     //all 3 components
    
                 
-    t_min = std::max(std::max(tx_min, tz_min), ty_min);
-    t_max = std::min(std::min(tx_max, tz_max), ty_max);
+    t_upper = std::min(std::min(tx_upper, tz_upper), ty_upper);
+    t_lower = std::max(std::max(tx_lower, tz_lower), ty_lower);
     
-    if(t0 < t_min && t_max > t_min && t_max < t1){
-        t0 = t_min;
-        t1 = t_max;
+    if(t0 < t_lower && t_upper > t_lower && t_upper < t1){
+        t0 = t_lower;
+        t1 = t_upper;
         return true;
     }else{
         return false;
