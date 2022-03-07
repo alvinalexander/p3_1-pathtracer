@@ -1,4 +1,4 @@
-# Install script for directory: /Users/aghouas/dev/personal/p3_1-pathtracer
+# Install script for directory: /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/CGL/cmake_install.cmake")
+  include("/Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/xcode/CGL/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/aghouas/dev/personal/p3_1-pathtracer/xcode/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/xcode/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

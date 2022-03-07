@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/scene/collada/collada.cpp \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/scene/collada/collada.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/CGL/include/CGL/CGL.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/CGL/include/CGL/misc.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/CGL/include/CGL/tinyexr.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/CGL/include/CGL/tinyxml2.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/scene/collada/camera_info.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/scene/collada/collada_info.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/CGL/include/CGL/matrix4x4.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/CGL/include/CGL/vector4D.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/CGL/include/CGL/vector3D.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/CGL/include/CGL/color.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/scene/collada/light_info.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/scene/collada/sphere_info.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/scene/collada/material_info.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/scene/collada/polymesh_info.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/CGL/include/CGL/vector2D.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/pathtracer/bsdf.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/CGL/include/CGL/matrix3x3.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/pathtracer/sampler.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/util/random_util.h \
+  /Users/aghouas/dev/computer-graphics/cs184/p3_1-pathtracer-current/src/util/image.h
