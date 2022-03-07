@@ -46,7 +46,7 @@ bool Sphere::has_intersection(const Ray &r) const {
         valid_intersection = r.min_t <= t && t <= r.max_t;
     }
     
-    else if( discriminant == 0){
+    else if(discriminant == 0){
         t =  -b / (2*a);
         
         valid_intersection = r.min_t <= t && t <= r.max_t;

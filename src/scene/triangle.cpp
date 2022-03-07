@@ -47,9 +47,10 @@ bool Triangle::has_intersection(const Ray &r) const {
     double t = intersecion[0];
     double b1 = intersecion[1];
     double b2 = intersecion[2];
+    double b3 = 1 - b1 - b2;
     
     
-    bool valid_intersection = r.min_t <= t && t <= r.max_t && 0 <= b1 && b1 <= 1 && 0 <= b2 && b2 <= 1 && 1 - b1 - b2 <= 1 && 1 - b1 - b2 >= 0;
+    bool valid_intersection = r.min_t <= t && t <= r.max_t && 0 <= b1 && b1 <= 1 && 0 <= b2 && b2 <= 1 && b3 <= 1 && b3 >= 0;
     
     if(valid_intersection){
         r.max_t = t;
@@ -64,37 +65,39 @@ bool Triangle::intersect(const Ray &r, Intersection *isect) const {
   // implement ray-triangle intersection. When an intersection takes
   // place, the Intersection data should be updated accordingly
     
-    if(has_intersection(r)){
+    Vector3D o = r.o;
+    Vector3D p0 = this->p1;
+    Vector3D p1 = this->p2;
+    Vector3D p2 = this->p3;
+    Vector3D d = r.d;
+    Vector3D e1 = p1 - p0;
+    Vector3D e2 = p2 - p0;
+    Vector3D s = o - p0;
+    Vector3D s1 = cross(d, e2);
+    Vector3D s2 = cross(s, e1);
+    
+    
+    Vector3D intersecion = Vector3D(dot(s2, e2), dot(s1, s), dot(s2, d)) / dot(s1, e1);
+    
+    double t = intersecion[0];
+    double b1 = intersecion[1];
+    double b2 = intersecion[2];
+    double b3 = 1 - b1 - b2;
+    
+    bool valid_intersection = r.min_t <= t && t <= r.max_t && 0 <= b1 && b1 <= 1 && 0 <= b2 && b2 <= 1 && b3 <= 1 && b3 >= 0;
+    
+    if(valid_intersection){
+        //update r_max_t;
+        r.max_t = t;
         
-        Vector3D o = r.o;
-        Vector3D p0 = this->p1;
-        Vector3D p1 = this->p2;
-        Vector3D p2 = this->p3;
-        Vector3D d = r.d;
-        Vector3D e1 = p1 - p0;
-        Vector3D e2 = p2 - p0;
-        Vector3D s = o - p0;
-        Vector3D s1 = cross(d, e2);
-        Vector3D s2 = cross(s, e1);
-        
-        
-        Vector3D intersecion = Vector3D(dot(s2, e2), dot(s1, s), dot(s2, d)) / dot(s1, e1);
-        
-        
-        double t = intersecion[0];
-        double b1 = intersecion[1];
-        double b2 = intersecion[2];
-        
+        //update the intersection object
         isect->t = t;
-        isect->n = n1 * b1 + n2 * b2 + (1-b1-b2) * n3;
+        isect->n = n1 * b1 + n2 * b2 + b3 * n3;
         isect->primitive = this;
         isect->bsdf = get_bsdf();
-        
-        return true;
     }
-
-  return false;
-
+    
+    return valid_intersection;
 }
 
 void Triangle::draw(const Color &c, float alpha) const {
