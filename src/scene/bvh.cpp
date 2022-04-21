@@ -195,6 +195,8 @@ bool BVHAccel::intersect(const Ray &ray, Intersection *i, BVHNode *node) const {
     
     double t0 = ray.min_t;
     double t1 = ray.max_t;
+    
+    
 
     if(!node->bb.intersect(ray, t0, t1)) return false;
     
@@ -205,9 +207,30 @@ bool BVHAccel::intersect(const Ray &ray, Intersection *i, BVHNode *node) const {
             hit = (*p)->intersect(ray, i) || hit;
         }
     }else{
-        bool hit_l = intersect(ray, i, node->l);
+        
+        double t0_l = t0, t1_l = t1;
+        double t0_r = t0, t1_r = t1;
+        
+        node->l->bb.intersect(ray, t0_l, t1_l);
+        node->r->bb.intersect(ray, t0_r, t1_r);
+        
         bool hit_r = intersect(ray, i, node->r);
-        hit = hit_l || hit_r;
+        bool hit_l = intersect(ray, i, node->l);
+        
+        if(hit_l && !hit_r){
+            hit = hit_l;
+
+        }else if (hit_r && !hit_l){
+            hit = hit_r;
+        }else if (hit_l && hit_r){
+            hit = hit_l;
+        }else{
+            hit  = false;
+        }
+        
+        
+            
+//        hit = hit_l || hit_r;
     }
     
     return hit;
