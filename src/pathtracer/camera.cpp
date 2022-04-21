@@ -201,11 +201,11 @@ Ray Camera::generate_ray(double x, double y) const {
     double xs = 2 * tan(hFov_rad / 2) * x - tan(hFov_rad / 2);
     double ys = 2 * tan(vFov_rad / 2) * y - tan(vFov_rad / 2);
     double zs = -1.0;
+    
     Vector3D ray_dir_camera = Vector3D(xs, ys, zs);
     Vector3D ray_direction_world = (c2w * ray_dir_camera);
     ray_direction_world.normalize();
-    Vector3D origin_world = c2w * pos;
-    
+    Vector3D origin_world = pos;
     
     Ray r =  Ray(origin_world, ray_direction_world);
     r.max_t = fClip;
