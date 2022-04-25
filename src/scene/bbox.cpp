@@ -19,40 +19,75 @@ bool BBox::intersect(const Ray& r, double& t0, double& t1) const {
     Vector3D d = r.d;
     Vector3D o = r.o;
     
-  //if diretion of ray is 0
-    if(d.norm() == 0.0){
+    //compute tmin / tmax
+    
+    if (d.x >= 0 ){
+        tx_min = (min.x - o.x) / d.x;
+        tx_max = (max.x - o.x) / d.x;
+    }else {
+        tx_min = (max.x - o.x) / d.x;
+        tx_max = (min.x - o.x) / d.x;
+    }
+    
+    
+    if(d.y >= 0){
+        ty_min = (min.y - o.y) / d.y;
+        ty_max = (max.y - o.y) / d.y;
+    }else{
+        ty_min = (max.y - o.y) / d.y;
+        ty_max = (min.y - o.y) / d.y;
+    }
+    
+    if(tx_min > ty_max || ty_min > tx_max){
         return false;
     }
     
-    //compute tmin / tmax
-     tx_min = (min.x - o.x) / d.x;
-     tx_max = (max.x - o.x) / d.x;
-    tx_upper = std::max(tx_min, tx_max);
-    tx_lower = std::min(tx_min, tx_max);
+    t_lower = std::max(tx_min, ty_min);
+    t_upper = std::min(tx_max, ty_max);
     
-      ty_min = (min.y - o.y) / d.y;
-      ty_max = (max.y - o.y) / d.y;
-    ty_upper = std::max(ty_min, ty_max);
-    ty_lower = std::min(ty_min, ty_max);
+//    if(ty_min > tx_min){
+//        t_lower = ty_min;
+//    }else{
+//        t_lower = tx_min;
+//    }
+//
+//    if(ty_max < tx_max){
+//        t_upper = ty_max;
+//    }else{
+//        t_upper = tx_min;
+//    }
+    
+    if(d.z >= 0){
+        tz_min = (min.z - o.z) / d.z;
+        tz_max = (max.z - o.z) / d.z;
+    }else{
+        tz_min = (max.z - o.z) / d.z;
+        tz_max = (min.z - o.z) / d.z;
+    }
 
-      tz_min = (min.z - o.z) / d.z;
-      tz_max = (max.z - o.z) / d.z;
-    tz_upper = std::max(tz_min, tz_max);
-    tz_lower = std::min(tz_min, tz_max);
+    if(t_lower > tz_max || tz_min > t_upper){
+        return false;
+    }
     
+    t_lower = std::max(t_lower, tz_min);
+    t_upper = std::min(t_upper, tz_max);
+//
+//    if(tz_min > t_lower){
+//        t_lower = tz_min;
+//    }
+//
+//    if(tz_max < t_upper){
+//        t_upper = tz_max;
+//    }
     
-    //all 3 components
-    t_upper = std::min(std::min(tx_upper, tz_upper), ty_upper);
-    t_lower = std::max(std::max(tx_lower, tz_lower), ty_lower);
-    
-    if(t0 <= t_lower && t_lower <= t1 && t_upper >= t_lower && t_upper <= t1 && t_upper >= t0){
+
+    if(t0 <= t_lower && t_lower <= t1 && t_upper <= t1 && t_upper >= t0){
         t0 = t_lower;
         t1 = t_upper;
         return true;
     }else{
         return false;
     }
-    
     
 }
 

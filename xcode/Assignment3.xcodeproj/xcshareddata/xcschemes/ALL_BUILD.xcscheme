@@ -56,8 +56,16 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-t 8 -r 800 600  ../../dae/meshedit/cow.dae"
+            argument = "-t 8 -r 800 600  ../../dae/sky/bunny.dae"
             isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-t 8 -r 800 600 ../../dae/sky/CBspheres_lambertian.dae"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-t 8 -r 800 600  ../../dae/meshedit/cow.dae"
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-t 8 -r 800 600 -f CBspheres.png ../../dae/sky/CBspheres_lambertian.dae"

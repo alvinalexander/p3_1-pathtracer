@@ -193,9 +193,8 @@ bool BVHAccel::intersect(const Ray &ray, Intersection *i, BVHNode *node) const {
     
     bool hit  = false;
     
-    double t0 = ray.min_t;
-    double t1 = ray.max_t;
-    
+    double t0 = 0.0;
+    double t1 = +INFINITY;
     
 
     if(!node->bb.intersect(ray, t0, t1)) return false;
@@ -207,41 +206,14 @@ bool BVHAccel::intersect(const Ray &ray, Intersection *i, BVHNode *node) const {
             hit = (*p)->intersect(ray, i) || hit;
         }
     }else{
+        bool hit_r, hit_l;
+         hit_l = intersect(ray, i, node->l);
+         hit_r = intersect(ray, i, node->r);
         
-        double t0_l = t0, t1_l = t1;
-        double t0_r = t0, t1_r = t1;
-        
-        node->l->bb.intersect(ray, t0_l, t1_l);
-        node->r->bb.intersect(ray, t0_r, t1_r);
-        
-        bool hit_r = intersect(ray, i, node->r);
-        bool hit_l = intersect(ray, i, node->l);
-        
-        if(hit_l && !hit_r){
-            hit = hit_l;
-
-        }else if (hit_r && !hit_l){
-            hit = hit_r;
-        }else if (hit_l && hit_r){
-            hit = hit_l;
-        }else{
-            hit  = false;
-        }
-        
-        
-            
-//        hit = hit_l || hit_r;
+         hit = hit_r || hit_l;
     }
     
     return hit;
-
-//  bool hit = false;
-//  for (auto p : primitives) {
-//    total_isects++;
-//    hit = p->intersect(ray, i) || hit;
-//  }
-//  return hit;
-
 
 }
 
