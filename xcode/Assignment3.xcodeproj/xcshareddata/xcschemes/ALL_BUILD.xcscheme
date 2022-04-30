@@ -56,6 +56,10 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "-t 8 -r 800 600 ../../dae/meshedit/maxplanck.dae"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "-t 8 -r 800 600  ../../dae/sky/bunny.dae"
             isEnabled = "YES">
          </CommandLineArgument>
